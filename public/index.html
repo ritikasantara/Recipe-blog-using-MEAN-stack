@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="RecipeBlog">
 
 <head>
 
@@ -48,6 +48,8 @@
       </nav>
 
 <!-- different sections in the page -->	 
+
+<div class="sections" ng-controller="PostCtrl">
  
 
       <section class="sect one" id="home">
@@ -184,7 +186,7 @@
 
           </div>
 
-		  <div class="create_recipe post_maincourse">Post Maincourse Recipes</div>
+		  <div ng-click="addPost()" class="create_recipe post_maincourse">Post Maincourse Recipes</div>
 
 
 	  </section>
@@ -362,7 +364,7 @@
 
           </div>
 
-		  <div class="create_recipe post_snacks">Post Snacks Recipes</div>
+		  <div ng-click="addPost()" class="create_recipe post_snacks">Post Snacks Recipes</div>
 
 
 
@@ -529,7 +531,7 @@
 
           </div>
 
-		  <div class="create_recipe post_starter">Post Starter Recipes</div>
+		  <div ng-click="addPost()" class="create_recipe post_starter">Post Starter Recipes</div>
 
 	  </section>
 
@@ -699,7 +701,7 @@
 
           </div>
 
-		  <div class="create_recipe post_desserts">Post Desserts Recipes</div>
+		  <div ng-click="addPost()" class="create_recipe post_desserts">Post Desserts Recipes</div>
 
 	  </section>
 
@@ -869,7 +871,7 @@
 
           </div>
 
-		  <div class="create_recipe post_beverages">Post Beverages Recipes</div>
+		  <div ng-click="addPost()" class="create_recipe post_beverages">Post Beverages Recipes</div>
 
 	  </section>
 
@@ -1036,9 +1038,11 @@
 
           </div>
 
-		  <div class="create_recipe post_popular">Post Popular Recipes</div>
+		  <div ng-click="addPost()" class="create_recipe post_popular">Post Popular Recipes</div>
 
 	  </section>
+
+ </div>
 
 
 
