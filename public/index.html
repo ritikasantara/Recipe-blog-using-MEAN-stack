@@ -7,13 +7,1097 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-route.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=David+Libre" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Basic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cardo" rel="stylesheet">
+
+    <script type="text/javascript" src="js/myScript.js"></script>
+	<link rel = "stylesheet" type = "text/css" href = "css/myStyle.css"/>
+		
     <title>Foodtube</title>
 
 </head>
 
 <body>
 
-    <h2> Hello World! </h2>
+    <!-- navigation bar-->
+
+      <nav>
+         
+		 <ul>
+
+			<li><a href="#home" class="active home_btn">HOME</a></li>
+			<li><a href="#maincourse" class="maincourse_btn">MAINCOURSE</a></li>
+			<li><a href="#snacks" class="snacks_btn">SNACKS</a></li>
+			<li><a href="#starter" class="starter_btn">STARTER</a></li>
+			<li><a href="#desserts" class="desserts_btn">DESSERTS</a></li>
+			<li><a href="#beverages" class="beverages_btn">BEVERAGES</a></li>
+			<li><a href="#popular" class="popular_btn">POPULAR</a></li>
+
+		 </ul>
+
+		 <input type="text" placeholder="  Search recipes" id="search_input">
+		 
+		 <i class="fa fa-search" aria-hidden="true" id="search"></i>
+		 
+	
+
+      </nav>
+
+<!-- different sections in the page -->	 
+ 
+
+      <section class="sect one" id="home">
+
+		 <span class="login_button auth_button">Login</span>
+		 <span class="signup_button auth_button">Sign Up</span>
+         <p id="sitename">foodTube</p>
+
+	  </section>
+
+      <section class="sect two blur" id="maincourse">
+
+		  <p class="title">MAINCOURSE</p>
+		  <p class="all_recipes_title">All Maincourse</p>
+
+        <!-- Blog posts -->
+
+          <div class="blogs">
+
+              
+			  <div class="recipes">
+                  
+                   <p id="recipe_title">CHICKEN DUM BIRYANI</p>
+
+				   <img src="images/chickendumbiryani.jpg" width="190" height="100"/>
+
+				   <div id="post_date">13 Sep, 2016</div>
+
+				   <div>INGREDIENTS <br> 
+
+						<p>
+							Chicken (washed) - 600 gm<br>
+							Basmati long grain rice - 250 gm<br>
+							Curd - 400 gm<br>
+							Chopped onion - 3 large<br>
+							Green chilli(slit) - 6... 
+
+						</p>
+
+
+
+				   </div>
+
+				  <div id="readmore"><a href="#">Read More.. </a></div>
+                   
+
+			  </div>
+
+			  <div class="recipes">
+                  
+				   <p id="recipe_title">VEG SCHEZWAN FRIEDRICE</p>
+
+				   <img src="images/vegschezwanfiedrice.jpg" width="190" height="100"/>
+
+				   <div id="post_date">14 Sep, 2016</div>
+
+				   <div>INGREDIENTS <br> 
+
+							<p>
+								Rice - 250gm<br>
+								Onion chopped - 2<br>
+								Green chilli - 2<br>
+								Cabbage chopped - 100 gm<br>
+								Carrot chopped - 2 small..
+
+						</p>
+
+
+
+				   </div>
+
+				  <div id="readmore"><a href="#">Read More.. </a></div>  
+
+			  </div>
+
+			  <div class="recipes">
+                  
+				                    
+				   <p id="recipe_title">PAN ROASTED CHICKEN</p>
+
+				   <img src="images/panroastedchicken.jpg" width="190" height="100"/>
+
+				    <div id="post_date">14 Sep, 2016</div>
+
+				   <div>INGREDIENTS <br> 
+
+							<p>
+
+								Chicken (washed) - 500 gm(medium pcs)<br>
+								Coriander leaves - 1/2 cup<br>
+								Mint leaves - 1/2 cup<br>
+								Rice flour - 1/2 cup<br>
+								Chopped onion - 1..
+
+						</p>
+
+
+
+				   </div>
+
+				  <div id="readmore"><a href="#">Read More..</a></div>  
+
+			  </div>
+
+			  <div class="recipes">
+                  
+				   <p id="recipe_title">KADHAI PANEER</p>
+
+				   <img src="images/kadahipaneer.jpg" width="190" height="100"/>
+
+				    <div id="post_date">13 Sep, 2016</div>
+
+				   <div>INGREDIENTS <br> 
+
+							<p>
+
+								Paneer (cut into cubes) - 200 gm<br>
+								Onion (Chopped in square shape) - 2<br>
+								Green pepper(Chopped in square shape) - 1<br>
+								Green chilli(slit) - 3<br>
+								Chopped onion - 2..
+
+						</p>
+
+
+
+				   </div>
+
+				  <div id="readmore"><a href="#">Read More..</a></div>
+
+			  </div>
+
+
+
+          </div>
+
+		  <div class="create_recipe post_maincourse">Post Maincourse Recipes</div>
+
+
+	  </section>
+
+	<!-- modal maincourse -->
+
+	<div id="modal_maincourse" class="modal">
+
+		<div id="close_modal">&times;</div>
+  
+		<div class="modal_form_posts">
+
+			<h2> Post Recipe </h2>
+			
+			<input type="text" placeholder="  Title">
+			<input type="text" placeholder="  Category">
+			<input type="textarea" placeholder="  Contents">
+			<button type="submit">POST</button>
+
+
+		</div>
+
+		
+
+	</div>		  
+
+	<!-- Article -->
+
+	  <article class="post_article"> 
+
+				<p id="title1_article"><em> A CULINARY CONFLUENCE</em></p>
+
+				<p id="article_date"><em>Posted on 12 Sep, 2016</em></p>
+
+
+				<p id="title2_article">Bhopal’s cuisine is a mouthwatering mix of the nawabi food of Hyderabad and Lucknow</p>
+
+				<img src="images/rezala.jpg" width="250" height="200"/>   
+
+				<p id="content">
+						<em>Some days ago, I cooked something that I had never tried before — Bhopali chicken rezala. I have eaten — and cooked — the usual rezala, a much loved dish of meat in a white curd-based sauce. But Bhopal’s rezala is different: it’s not white, but green in colour. And the predominant taste is that of coriander and mint.
+
+						It turned out quite well, and I have to thank Suman Rakshit, the executive chef of Noor-Us-Sabah Palace in Bhopal, for that. He is a Bengali, of course — but has been studying Bhopali food. And he tells me that the Muslim cuisine of Bhopal — which he calls Bhopal gharana — is distinct from the Nawabi food of Hyderabad and Lucknow.</em> <span id="readmore_article"><a href="#"><em>Read More..</em> </a></span>
+		
+		       </p>
+
+	  </article	>  
+
+
+
+      <section class="sect three blur" id="snacks">
+
+		  <p class="title">SNACKS</p>
+		  <p class="all_recipes_title">All Snacks</p>
+
+	    <!-- Blog posts -->
+
+          <div class="blogs">
+
+              
+			  <div class="recipes">
+                  
+                   <p id="recipe_title">VEGETABLE CHEESE PASTA</p>
+
+				   <img src="images/vegetablecheesepasta.jpg" width="190" height="100"/>
+
+				   <div id="post_date">16 Sep, 2016</div>
+
+				   <div>INGREDIENTS <br> 
+
+							<p>
+
+								Pasta (Fusilli) - 150 gm<br>
+								Chopped onions - 2 (medium)<br>
+								Chopped tomato - 2 (medium)<br>
+								Chopped green chilli - 1 to 2<br>
+								Chopped garlic - 7 to 8..
+
+						</p>
+
+
+
+				   </div>
+
+				  <div id="readmore"><a href="#">Read More..</a></div>
+
+
+			  </div>
+
+			  <div class="recipes">
+                  
+				   <p id="recipe_title">CHEESY PANEER BALLS</p>
+
+				   <img src="images/paneercheeseballs.jpg" width="190" height="100"/>
+
+				   <div id="post_date">15 Sep, 2016</div>
+
+				   <div>INGREDIENTS <br> 
+
+							<p>
+
+								Paneer/Indian cottage cheese (grated) - 200 gm<br>
+								Cheese (cut into small cubes) - 50 gm<br>
+								Gram flour - 2 tbsp<br>
+								Corn flour - 1 tbsp<br>
+								Finely chopped onion - 2..
+
+						</p>
+
+
+
+				   </div>
+
+				  <div id="readmore"><a href="#">Read More..</a></div>
+
+			  </div>
+
+			  <div class="recipes">
+                  
+				   <p id="recipe_title">POTATO PANCAKE</p>
+
+				   <img src="images/potatopancake.jpg" width="190" height="100"/>
+
+				   <div id="post_date">17 Sep, 2016</div>
+
+				   <div>INGREDIENTS <br> 
+
+							<p>
+
+								Potato(peeled and washed) - 3(large) or 400 gm<br>
+								Onion(finely chopped) - 1(large)<br>
+								Egg - 2<br>
+								All purpose flour(maida) - 3 tbsp<br>
+								Green chilli(chopped) - 2..
+
+						</p>
+
+
+
+				   </div>
+
+				  <div id="readmore"><a href="#">Read More.. </a></div>
+
+			  </div>
+
+			  <div class="recipes">
+                  
+				   <p id="recipe_title">KHAMAN DHOKLA</p>
+
+				   <img src="images/khamandhokla.jpg" width="190" height="100"/>
+
+				    <div id="post_date">15 Sep, 2016</div>
+
+				   <div>INGREDIENTS <br> 
+
+							<p>
+
+								Gram flour(besan) - 150 gm(2 cups)<br>
+								Ginger and green chilli paste - 2 tsp<br>
+								Semolina (sooji) - 2 tbsp<br>
+								Turmeric powder - 1/3 tsp<br>
+								Sugar - 1.5 tbsp..
+
+						</p>
+
+
+
+				   </div>
+
+				  <div id="readmore"><a href="#">Read More..</a></div>
+
+			  </div>
+
+
+
+          </div>
+
+		  <div class="create_recipe post_snacks">Post Snacks Recipes</div>
+
+
+
+	  </section>
+
+
+
+
+	<!-- Article -->
+
+	  <article class="post_article"> 
+
+				<p id="title1_article"><em> A TAMARIND HIGH </em></p>
+
+				<p id="article_date"><em>Posted on 16 Sep, 2016</em></p>
+
+
+				<p id="title2_article">Rasam is the ultimate south Indian comfort food, says Rahul Verma</p>
+
+				<img src="images/rasam.jpg" width="250" height="200"/>   
+
+				<p id="content"><em>
+					Now that the worst of the summer is behind us, I have begun dreaming of piping hot dishes. And one vision has been tempting me — that of a steel bowl of steaming rasam. Rasam warms you up, whets the appetite, gives you all kinds of nutrients — and tastes really good.
+
+					Even though we now know all about sub-regional cuisine, a south Indian meal in a city north of the Vindhyas still mostly means a thali. The centre of the thali has a mound of rice with a papad on top. The sides are lined with
+					bowls with rasam, sambar, vegetables, curd and a sweet dish. You drink up the invigorating rasam and are ready to take on the world.
+
+					“Rasam is made in almost every south Indian home, traditionally with tamarind,” stresses Ajit Bangera, the senior executive chef at ITC Grand Chola, Chennai. “It’s called rasam in Tamil and Malayalam, saaru in Kannada, and charu and pulusu in Telugu.”</em> 
+					
+					<span id="readmore_article"><a href="#"><em>Read More..</em></a></span>
+		
+		       </p>
+
+	  </article	> 
+
+      <section class="sect four blur" id="starter">
+
+		  <p class="title">STARTER</p>
+		  <p class="all_recipes_title">All Starters</p>
+
+
+		<!-- Blog posts -->
+
+          <div class="blogs">
+
+              
+			  <div class="recipes">
+                  
+                   <p id="recipe_title">CRISPY CHICKEN POPCORN</p>
+
+				   <img src="images/crispychickenpopcorn.jpg" width="190" height="100"/>
+
+				    <div id="post_date">14 Sep, 2016</div>
+
+				   <div>INGREDIENTS <br> 
+
+							<p>
+
+								Chicken (boneless) - 200 gm<br>
+								Besan(gram flour) - 3 tbsp<br>
+								Turmeric powder - 1 tsp<br>
+								Red chilli powder - 1 tsp<br>
+								Ginger garlic paste - 1 tsp..
+
+						</p>
+
+
+
+				   </div>
+
+				  <div id="readmore"><a href="#">Read More.. </a></div>
+
+
+			  </div>
+
+			  <div class="recipes">
+                  
+				   <p id="recipe_title">SHRIMP 65</p>
+
+				   <img src="images/shrimp 65.jpg" width="190" height="100"/>
+
+				    <div id="post_date">17 Sep, 2016</div>
+
+				   <div>INGREDIENTS <br> 
+
+							<p>
+
+								Prawn (washed) - 200 gm<br>
+								Turmeric powder - 1/2 tsp<br>
+								Kashmiri red chilli powder - 2 tsp<br>
+								Coriander powder - 1/2 tsp<br>
+								Cumin powder - 1/2 tsp..
+
+						</p>
+
+
+
+				   </div>
+
+				  <div id="readmore"><a href="#">Read More.. </a></div>
+
+			  </div>
+
+			  <div class="recipes">
+                  
+				   <p id="recipe_title">MUTTON KEBAB</p>
+
+				   <img src="images/muttonkebab.jpg" width="190" height="100"/>
+
+				    <div id="post_date">16 Sep, 2016</div>
+
+				   <div>INGREDIENTS <br> 
+
+							<p>
+
+								Mutton mince/keema (washed) - 250 gm<br>
+								Chopped onion - 2 (medium)<br>
+								Ginger chopped - 2 inch<br>
+								Garlic cloves - 12 to 15<br>
+								Coriander leaves - 1/3 cup..
+
+
+						</p>
+
+
+
+				   </div>
+
+				  <div id="readmore"><a href="#">Read More.. </a></div>
+
+			  </div>
+
+			  <div class="recipes">
+                  
+				   <p id="recipe_title">CHATPATA PAPAD CONE</p>
+
+				   <img src="images/papadcone.jpg" width="190" height="100"/>
+
+				    <div id="post_date">15 Sep, 2016</div>
+
+				   <div>INGREDIENTS <br> 
+
+							<p>
+
+								Masala papad/plain papad (poppadom) - 6 pcs<br>
+								Bombay mix/any mix bhujiya/Namkeen - 150 gm<br>
+								Green chilli(chopped) - 1<br>
+								Chopped onion - 1<br>
+								Chopped coriander leaves..
+
+
+						</p>
+
+
+
+				   </div>
+
+				  <div id="readmore"><a href="#">Read More.. </a></div>
+				  
+
+			  </div>
+
+
+
+          </div>
+
+		  <div class="create_recipe post_starter">Post Starter Recipes</div>
+
+	  </section>
+
+<!-- Article -->
+
+	  <article class="post_article"> 
+
+				<p id="title1_article"><em> WHAT IS THE WINE HARVEST SEASON ALL ABOUT? </em></p>
+
+				<p id="article_date"><em>Posted on 13 Sep, 2016</em></p>
+
+
+				<p id="title2_article">"Wine harvest season, being out in the beautiful fields: This is what people like to talk about, says Michelle Meyer</p>
+
+				<img src="images/grapes.jpg" width="250" height="200"/>   
+
+				<p id="content"><em>
+						As dawn breaks each morning this time of year, millions of grapes glisten with dew like clusters of jewels hanging heavy in the vast vineyards. These canary diamonds and amethysts are waiting, just waiting to be plucked and appreciated.
+
+						And they will be. In the northern hemisphere, September through October is when these jewelry store owners fling open their doors for the thousands of volunteers who relish the chance to participate in wine harvest season.
+
+						The bounty of future fine beverages stems from vineyards all across the United States — not only in what most of us consider wine country: Sonoma and Napa valleys in California.
+
+						Hundreds of volunteers stream toward vineyards in Kansas too.</em> <span id="readmore_article"><a href="#"><em>Read More..</em></a></span>
+		
+		       </p>
+
+	  </article	> 
+
+
+      <section class="sect five blur" id="desserts">
+		  
+		  <p class="title">DESSERTS</p>
+		  <p class="all_recipes_title">All Desserts</p>
+
+
+		<!-- Blog posts -->
+
+          <div class="blogs">
+
+              
+			  <div class="recipes">
+                  
+                   <p id="recipe_title">RASGULLA</p>
+
+				   <img src="images/rasgulla.jpg" width="190" height="100"/>
+
+				    <div id="post_date">14 Sep, 2016</div>
+
+				   <div>INGREDIENTS <br> 
+
+							<p>
+
+								Whole milk - 1 ltr<br>
+								Lemon - 4 tbsp<br>
+								Sugar - 2 cup<br>
+								Water - 3 cup<br>
+								Saffron (optional) - 1 pinch..
+
+
+
+						</p>
+
+
+
+				   </div>
+
+				  <div id="readmore"><a href="#">Read More.. </a></div>
+
+
+			  </div>
+
+			  <div class="recipes">
+                  
+				   <p id="recipe_title">COLD COFFEE WITH ICECREAM</p>
+
+				   <img src="images/coldcoffee.jpg" width="190" height="100"/>
+				   
+				    <div id="post_date">14 Sep, 2016</div>
+
+				   <div>INGREDIENTS <br> 
+
+							<p>
+
+								Chilled milk - 1 glass<br>
+								Coffee powder - 2 tsp<br>
+								Sugar(brown/white) - 3 tbsp<br>
+								Warm water - 1/4 cup<br>
+								Ice cream (vanilla) - 3 scoops..
+
+
+
+						</p>
+
+
+
+				   </div>
+
+				  <div id="readmore"><a href="#">Read More.. </a></div>
+
+			  </div>
+
+			  <div class="recipes">
+                  
+				   <p id="recipe_title">KAJU KATLI</p>
+
+				   <img src="images/kajukatli.jpg" width="190" height="100"/>
+
+				    <div id="post_date">17 Sep, 2016</div>
+
+				   <div>INGREDIENTS <br> 
+
+							<p>
+
+								Cashew nuts/kaju(whole) - 1 cup<br>
+								Sugar - 1/2 cup<br>
+								Saffron - 1 pinch<br>
+								Ghee - 2 tsp<br>
+								Water - 5 tbsp..
+
+
+
+
+						</p>
+
+
+
+				   </div>
+
+				  <div id="readmore"><a href="#">Read More.. </a></div>
+
+			  </div>
+
+			  <div class="recipes">
+                  
+				  	<p id="recipe_title">CHOCOLATE MUFFINS</p>
+
+				   <img src="images/chocolatemuffin.jpg" width="190" height="100"/>
+
+				    <div id="post_date">18 Sep, 2016</div>
+
+				   <div>INGREDIENTS <br> 
+
+							<p>
+
+								wheat flour(maida) - 2 1/4 cups<br>
+								Cocoa powder - 1/2 cup<br>
+								Castor sugar- 1/2 cup<br>
+								Chocolate chips - 1/2 cup<br>
+								Vegetable oil - 1/2 cup..
+								
+
+
+
+
+						</p>
+
+
+
+				   </div>
+
+				  <div id="readmore"><a href="#">Read More.. </a></div>
+
+			  </div>
+
+
+
+          </div>
+
+		  <div class="create_recipe post_desserts">Post Desserts Recipes</div>
+
+	  </section>
+
+
+  <!-- Article -->
+
+	  <article class="post_article height_adjust"> 
+
+				<p id="title1_article"><em> 17 WAYS TO STUFF YOUR FRENCH TOAST </em></p>
+
+				<p id="article_date"><em>Posted on 10 Sep, 2016</em></p>
+
+
+				
+
+				<img src="images/toast.jpg" width="250" height="200"/>   
+
+				<p id="content"><em>
+						You know what's even better than French toast? Stuffed French toast. Yeah, you probably knew where we were going with that one. We're big fans of stuffed ... well, anything. Food stuffed within food? Hell yeah. So here, we're taking something decadent already, and going beyond over the top. We went over the top, around, and then back over that top. We started with the best stuffed French toast OF ALL TIME, and then gave you more. Because that's how we roll.</em> <span id="readmore_article"><a href="#"><em>Read More..</em></a></span>
+		
+		       </p>
+
+	  </article	> 
+
+
+
+	  <section class="sect six blur" id="beverages">
+		  
+		  <p class="title">BEVERAGES</p>
+		  <p class="all_recipes_title">All Beverages</p>
+
+
+		<!-- Blog posts -->
+
+          <div class="blogs">
+
+              
+			  <div class="recipes">
+                  
+                   <p id="recipe_title">MINT LEMONADE</p>
+
+				   <img src="images/mintlemonade.jpg" width="190" height="100"/>
+
+				    <div id="post_date">17 Sep, 2016</div>
+
+				   <div>INGREDIENTS <br> 
+
+							<p>
+
+								Fresh mint leaves - 1/3 cup<br>
+								Sugar - 2 tbsp<br>
+								Sugar - 2 tbsp<br>
+								Lemon juice - 2 tbsp<br>
+								Salt - 1/4 tsp<br>
+								Water - 1/3 cup..
+								
+
+
+
+
+						</p>
+
+
+
+				   </div>
+
+				  <div id="readmore"><a href="#">Read More.. </a></div>
+     
+
+			  </div>
+
+			  <div class="recipes">
+                  
+				   <p id="recipe_title">MASALA CHAAS</p>
+
+				   <img src="images/masalachas.JPG" width="190" height="100"/>
+
+				    <div id="post_date">19 Sep, 2016</div>
+
+				   <div>INGREDIENTS <br> 
+
+							<p>
+
+								curd – 1 cup<br>
+								Green chili – 1 small, chopped<br>
+								Cilantro or coriander leaves – 1 tsp, chopped<br>
+								Curry leaves – 2, chopped<br>
+								Black salt – 3/4 tsp or to taste..
+								
+
+
+
+
+						</p>
+
+
+
+				   </div>
+
+				  <div id="readmore"><a href="#">Read More.. </a></div>
+
+			  </div>
+
+			  <div class="recipes">
+
+
+                   <p id="recipe_title">PINEAPPLE SHAKE</p>
+
+				   <img src="images/pineappleshake.jpg" width="190" height="100"/>
+
+				    <div id="post_date">19 Sep, 2016</div>
+
+				   <div>INGREDIENTS <br> 
+
+							<p>
+
+								Pineapple - 2 cups, chopped<br>
+								Milk - 1 1/4 cup<br>
+								Pistachio, Almonds - As needed<br>
+								Powdered almond - 1 tbsp<br>
+								Green cardamon powder - A pinch..
+								
+								
+
+						</p>
+
+
+
+				   </div>
+
+				  <div id="readmore"><a href="#">Read More.. </a></div>
+				  
+
+			  </div>
+
+			  <div class="recipes">
+                  
+				   <p id="recipe_title">MANGO PUNCH</p>
+
+				   <img src="images/mangopunch.jpg" width="190" height="100"/>
+
+				    <div id="post_date">20 Sep, 2016</div>
+
+				   <div>INGREDIENTS <br> 
+
+							<p>
+
+								Orange juice - 1 cup<br>
+								Cubed mangoes - 4 cups<br>
+								Strawberries(sliced) - 1 cup<br>
+								Lemon juice - 3 tbsp<br>
+								Lime soda - 4 cups..
+								
+								
+
+						</p>
+
+
+
+				   </div>
+
+				  <div id="readmore"><a href="#">Read More.. </a></div>
+
+			  </div>
+
+
+
+          </div>
+
+		  <div class="create_recipe post_beverages">Post Beverages Recipes</div>
+
+	  </section>
+
+
+<!-- Article -->
+
+	  <article class="post_article height_adjust"> 
+
+				<p id="title1_article"><em> DOES THE COLOR OF AN EGG YOLK INDICATE HOW NUTRITIOUS IT IS?</em></p>
+
+				<p id="article_date"><em>Posted on 19 Sep, 2016</em></p>
+
+
+				
+
+				<img src="images/egg.jpg" width="250" height="200"/>   
+
+				<p id="content"><em>
+
+						Deviled eggs, poached, fried, hard-boiled, soft-boiled, sunny-side up — whatever way you like your egg, you're looking at that golden center, and sometimes you notice something. The shade of golden isn't always the same. Some yolks are lighter, some yellower, some deeper, almost orange-colored. Do you get more nutrients one way or the other?
+
+						The bottom line, says Marion Nestle, author of What to Eat and professor of Nutrition, Food Studies, and Public Health at New York University, is that "the color [of an egg yolk] doesn't reflect the nutrient value in any significant way."</em> <span id="readmore_article"><a href="#"><em>Read More..</em></a></span>
+		
+		        </p>
+
+	  </article	> 
+
+
+
+	  <section class="sect seven blur" id="popular">
+
+		  <p class="title">POPULAR</p>
+		  <p class="all_recipes_title">All Popular</p>
+
+
+		<!-- Blog posts -->
+
+          <div class="blogs">
+
+              
+			  <div class="recipes">
+                  
+                    <p id="recipe_title">KOLKATA STYLE EGG ROLLS</p>
+
+				   <img src="images/eggroll.jpg" width="190" height="100"/>
+
+				    <div id="post_date">22 Sep, 2016</div>
+
+				   <div>INGREDIENTS <br> 
+
+							<p>
+
+								All purpose flour(maida) - 100 gm<br>
+								Cooking oil - 2 tbsp<br>
+								Salt - 1/3 tsp<br>
+								water<br>
+								Eggs - 4..
+								
+								
+
+						</p>
+
+
+
+				   </div>
+
+				  <div id="readmore"><a href="#">Read More.. </a></div>
+
+
+			  </div>
+
+			  <div class="recipes">
+                  
+				   <p id="recipe_title">EGG CHEESE BURGER</p>
+
+				   <img src="images/eggcheeseburger.jpg" width="190" height="100"/>
+
+				    <div id="post_date">19 Sep, 2016</div>
+
+				   <div>INGREDIENTS <br> 
+
+							<p>
+
+								Burger buns - 2<br>
+								Eggs - 2<br>
+								Cheese Slices - 2<br>
+								Sliced Cucumber - 1<br>
+								Sliced Tomato - ..1
+								
+								
+
+						</p>
+
+
+
+				   </div>
+
+				  <div id="readmore"><a href="#">Read More.. </a></div>
+
+			  </div>
+
+			  <div class="recipes">
+                  
+				  	<p id="recipe_title">POMFRET FISH FRY</p>
+
+				   <img src="images/pomfretfishfry.jpg" width="190" height="100"/>
+
+				    <div id="post_date">20 Sep, 2016</div>
+
+				   <div>INGREDIENTS <br> 
+
+							<p>
+
+								Pomfret fish (washed) - 2<br>
+								Green chilli - 3<br>
+								Garlic cloves(peeled) - 10 to 12<br>
+								Ginger chopped - 2 inch<br>
+								Turmeric powder - 1 tsp..
+								
+								
+
+						</p>
+
+
+
+				   </div>
+
+				  <div id="readmore"><a href="#">Read More.. </a></div>
+
+			  </div>
+
+			  <div class="recipes">
+                  
+				  <p id="recipe_title">PALAK PANEER</p>
+
+				   <img src="images/palakpaneer.jpg" width="190" height="100"/>
+
+				    <div id="post_date">21 Sep, 2016</div>
+
+				   <div>INGREDIENTS <br> 
+
+							<p>
+
+
+								Spinach leaves(washed) - 250 gm<br>
+								Paneer (cubes) - 200 gm<br>
+								Green chilli -  3<br>
+								Chopped ginger - 1 inch<br>
+								Garlic cloves(peeled) - 14 to 16..
+								
+								
+
+						</p>
+
+
+
+				   </div>
+
+				  <div id="readmore"><a href="#">Read More.. </a></div>
+
+			  </div>
+
+
+
+          </div>
+
+		  <div class="create_recipe post_popular">Post Popular Recipes</div>
+
+	  </section>
+
+
+
+   <!-- The footer -->
+
+      <footer>
+
+
+	    <div class="padd">	
+
+				<div class="col-1">
+
+					<ul>
+
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+						
+					</ul>
+
+				</div>
+
+
+				<span class="col-2">
+					
+					SUBSCRIBE FOR NEWSLETTER <div> You'll be informed about our new food articles and recipes </div>
+					<br>
+					
+					<input type="text" placeholder=" Enter email" id="newsletter_input">
+					<a href="#"><input type="submit" value="SUBMIT" id="submit_input"></a>
+
+				</span>
+
+				<div class="col-icons">
+					
+					FOLLOW US ON &nbsp; &nbsp;
+				
+					
+
+						<a href="#"><i class="fa fa-twitter" aria-hidden="true" class ="fa_icon"></i></a>
+						<a href="#"><i class="fa fa-instagram" aria-hidden="true" class ="fa_icon"></i></a>
+						<a href="#"><i class="fa fa-facebook-official" aria-hidden="true" class ="fa_icon"></i></a>
+						<a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+						
+					
+
+				</div>	
+
+	    </div>	  
+
+		<div class="bottom">
+
+			<span>&copy; 2016 foodTube<span>
+
+		</div>	 
+
+
+
+      </footer>
+
 
 
 </body>        
