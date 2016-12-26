@@ -30,7 +30,7 @@ nav{
 
     position: fixed;
     height: 50px;
-    width: 80%;
+    width: 100%;
     background-color: rgba(0,0,0,.5);
     z-index: 99;
     font-size: 15px;
@@ -431,6 +431,7 @@ nav li a:hover{
     color: #051a2f;
     text-align: center;
     margin-top: 20px;
+    text-transform: uppercase;
    
 
 }
