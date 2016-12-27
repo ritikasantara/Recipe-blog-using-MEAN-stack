@@ -48,7 +48,15 @@ module.exports.updateCategories = function(id, category, options, callback){
 
         name: category.name
 
-    };
+    }
     Categories.findOneAndUpdate(query, update, options, callback);
 
-}
+} 
+
+// Delete a category
+
+module.exports.deleteCategories = function(id, callback){
+    var query = {_id: id};
+    Categories.remove(query, callback);
+
+} 

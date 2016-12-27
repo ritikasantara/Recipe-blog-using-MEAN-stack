@@ -85,3 +85,11 @@ module.exports.updatePosts = function(id, post, options, callback){
     Posts.findOneAndUpdate(query, update, options, callback);
 
 } 
+
+// Delete a post
+
+module.exports.deletePosts = function(id, callback){
+    var query = {_id: id};
+    Posts.remove(query, callback);
+
+} 

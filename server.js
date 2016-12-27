@@ -5,12 +5,14 @@ var mongoose = require('mongoose');
 
 Categories = require('./models/categories');
 Posts = require('./models/posts');
+Articles = require('./models/articles');
 
 //connect to mongoose
 
 mongoose.connect('mongodb://localhost/recipeBlog');
 var db = mongoose.connection;
 
+app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
 
 
@@ -48,6 +50,21 @@ app.put('/api/categories/:_id' , function(req, res){
     var category = req.body;
 
     Categories.updateCategories(id, category, {}, function(err, category){
+
+        if(err){
+
+            throw err;
+        }
+        res.json(category);
+    })
+
+});
+
+app.delete('/api/categories/:_id' , function(req, res){
+
+    var id = req.params._id;
+
+    Categories.deleteCategories(id, function(err, category){
 
         if(err){
 
@@ -116,6 +133,93 @@ app.put('/api/posts/:_id' , function(req, res){
 
 });
 
+app.delete('/api/posts/:_id' , function(req, res){
+
+    var id = req.params._id;
+
+    Posts.deletePosts(id, function(err, post){
+
+        if(err){
+
+            throw err;
+        }
+        res.json(post);
+    })
+
+});
+
+//Articles
+
+app.get('/api/articles' , function(req, res){
+
+    Articles.getArticles(function(err, articles){
+
+        if(err){
+
+            throw err;
+        }
+        res.json(articles);
+    })
+
+});
+
+ app.get('/api/articles/:_id' , function(req, res){
+
+    Articles.getArticleById(req.params._id, function(err, article){
+
+        if(err){
+
+            throw err;
+         }
+         res.json(article);
+     })
+
+ });
+
+ app.post('/api/articles' , function(req, res){
+
+     var article = req.body;
+
+     Articles.addArticles(article, function(err, article){
+
+         if(err){
+
+             throw err;
+         }
+         res.json(article);
+     })
+
+ });
+
+ app.put('/api/articles/:_id' , function(req, res){
+
+     var id = req.params._id;
+     var article = req.body;
+
+     Articles.updateArticles(id, article, {}, function(err, article){
+
+         if(err){
+             throw err;
+         }
+         res.json(article);
+     })
+
+ });
+
+ app.delete('/api/articles/:_id' , function(req, res){
+
+     var id = req.params._id;
+
+     Articles.deleteArticles(id, function(err, article){
+
+         if(err){
+
+             throw err;
+         }
+         res.json(article);
+     })
+
+ });
 
 
 
@@ -126,4 +230,3 @@ app.listen(8000, function(){
 });
 
 
-app.use(express.static(__dirname + '/public'));
