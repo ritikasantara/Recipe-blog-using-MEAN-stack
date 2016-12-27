@@ -42,6 +42,22 @@ app.post('/api/categories' , function(req, res){
 
 });
 
+app.put('/api/categories/:_id' , function(req, res){
+
+    var id = req.params._id;
+    var category = req.body;
+
+    Categories.updateCategories(id, category, {}, function(err, category){
+
+        if(err){
+
+            throw err;
+        }
+        res.json(category);
+    })
+
+});
+
 
 app.get('/api/posts' , function(req, res){
 
@@ -74,6 +90,22 @@ app.post('/api/posts' , function(req, res){
     var post = req.body;
 
     Posts.addPosts(post, function(err, post){
+
+        if(err){
+
+            throw err;
+        }
+        res.json(post);
+    })
+
+});
+
+app.put('/api/posts/:_id' , function(req, res){
+
+    var id = req.params._id;
+    var post = req.body;
+
+    Posts.updatePosts(id, post, {}, function(err, post){
 
         if(err){
 

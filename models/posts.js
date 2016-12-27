@@ -68,3 +68,20 @@ module.exports.addPosts = function(post, callback){
     Posts.create(post, callback);
 
 } 
+
+// Update posts
+
+module.exports.updatePosts = function(id, post, options, callback){
+
+    var query = {_id: id};
+    var update = {
+
+        title: post.title,
+        category: post.category,
+        description: post.description,
+        image: post.image
+
+    }
+    Posts.findOneAndUpdate(query, update, options, callback);
+
+} 

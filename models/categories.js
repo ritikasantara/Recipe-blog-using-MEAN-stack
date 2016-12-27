@@ -38,3 +38,17 @@ module.exports.addCategories = function(category, callback){
     Categories.create(category, callback);
 
 } 
+
+// Update categories
+
+module.exports.updateCategories = function(id, category, options, callback){
+
+    var query = {_id: id};
+    var update = {
+
+        name: category.name
+
+    };
+    Categories.findOneAndUpdate(query, update, options, callback);
+
+}
