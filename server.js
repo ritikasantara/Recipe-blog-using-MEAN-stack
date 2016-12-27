@@ -11,6 +11,8 @@ Posts = require('./models/posts');
 mongoose.connect('mongodb://localhost/recipeBlog');
 var db = mongoose.connection;
 
+app.use(bodyParser.json());
+
 
 app.get('/api/categories' , function(req, res){
 
@@ -24,6 +26,22 @@ app.get('/api/categories' , function(req, res){
     })
 
 });
+
+app.post('/api/categories' , function(req, res){
+
+    var category = req.body;
+
+    Categories.addCategories(category,function(err, category){
+
+        if(err){
+
+            throw err;
+        }
+        res.json(category);
+    })
+
+});
+
 
 app.get('/api/posts' , function(req, res){
 
@@ -41,6 +59,21 @@ app.get('/api/posts' , function(req, res){
 app.get('/api/posts/:_id' , function(req, res){
 
     Posts.getPostById(req.params._id, function(err, post){
+
+        if(err){
+
+            throw err;
+        }
+        res.json(post);
+    })
+
+});
+
+app.post('/api/posts' , function(req, res){
+
+    var post = req.body;
+
+    Posts.addPosts(post, function(err, post){
 
         if(err){
 

@@ -4,7 +4,7 @@ var mongoose = require('mongoose');
 
 var postsSchema = mongoose.Schema({
 
-    name:{
+    title:{
 
         type: String,
         required: true
@@ -55,9 +55,16 @@ module.exports.getPosts = function(callback, limit){
 
 // Get a single post
 
-
 module.exports.getPostById = function(id, callback){
 
     Posts.findById(id, callback);
     
 }
+
+// Add a post
+
+module.exports.addPosts = function(post, callback){
+
+    Posts.create(post, callback);
+
+} 
