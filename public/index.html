@@ -201,10 +201,16 @@
 
 			<h2> Post Recipe </h2>
 			
-			<input type="text" placeholder="  Title">
-			<input type="text" placeholder="  Category">
-			<input type="textarea" placeholder="  Contents">
-			<button type="submit">POST</button>
+			<form method="post" enctype='multipart/formdata'>	
+
+				<input type="text" ng-model="posts.title" placeholder="  Title">
+				<input type="text" placeholder="  Category">
+				<label for="recipe_image">Image</label>
+				<input type="file" id="recipe_image">
+				<textarea cols="30" rows="20" ng-model="posts.description"  placeholder="  Contents"></textarea>
+				<button type="submit">POST</button>
+
+			</form>
 
 
 		</div>
