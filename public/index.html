@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="RecipeBlog">
+<html ng-app="recipeBlog" ng-controller="homeCtrl">
 
 <head>
 
@@ -15,6 +15,10 @@
     <link href="https://fonts.googleapis.com/css?family=Cardo" rel="stylesheet">
 
     <script type="text/javascript" src="js/myScript.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/controllers/maincourseCtrl.js"></script>
+	<script type="text/javascript" src="js/controllers/categoryCtrl.js"></script>
+	<script type="text/javascript" src="js/controllers/articleCtrl.js"></script>
 	<link rel = "stylesheet" type = "text/css" href = "css/myStyle.css"/>
 		
     <title>Foodtube</title>
@@ -47,9 +51,11 @@
 
       </nav>
 
+	  <ng-view></ng-view>
+
 <!-- different sections in the page -->	 
 
-<div class="sections" ng-controller="PostCtrl">
+<div class="sections" ng-controller="postCtrl">
  
 
       <section class="sect one" id="home">
@@ -57,6 +63,7 @@
 		 <span class="login_button auth_button">Login</span>
 		 <span class="signup_button auth_button">Sign Up</span>
          <p id="sitename">foodTube</p>
+		 <a href="#/posts/add"><button class="add_recipe" ng-click="add_recipe()">Add Recipes</button></a>
 
 	  </section>
 
@@ -186,12 +193,12 @@
 
           </div>
 
-		  <div ng-click="addPost()" class="create_recipe post_maincourse">Post Maincourse Recipes</div>
+		  
 
 
 	  </section>
 
-	<!-- modal maincourse -->
+	<!-- modal maincourse 
 
 	<div id="modal_maincourse" class="modal">
 
@@ -217,7 +224,7 @@
 
 		
 
-	</div>		  
+	</div>	-->	  
 
 	<!-- Article -->
 
@@ -369,8 +376,6 @@
 
 
           </div>
-
-		  <div ng-click="addPost()" class="create_recipe post_snacks">Post Snacks Recipes</div>
 
 
 
@@ -707,7 +712,7 @@
 
           </div>
 
-		  <div ng-click="addPost()" class="create_recipe post_desserts">Post Desserts Recipes</div>
+
 
 	  </section>
 
@@ -877,7 +882,7 @@
 
           </div>
 
-		  <div ng-click="addPost()" class="create_recipe post_beverages">Post Beverages Recipes</div>
+		
 
 	  </section>
 
@@ -1044,7 +1049,7 @@
 
           </div>
 
-		  <div ng-click="addPost()" class="create_recipe post_popular">Post Popular Recipes</div>
+		
 
 	  </section>
 
