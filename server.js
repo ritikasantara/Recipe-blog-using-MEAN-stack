@@ -29,6 +29,8 @@ app.get('/api/categories' , function(req, res){
 
 });
 
+
+
 app.post('/api/categories' , function(req, res){
 
     var category = req.body;
@@ -101,6 +103,47 @@ app.get('/api/posts/:_id' , function(req, res){
     })
 
 });
+
+app.get('/api/posts/category/:name' , function(req, res){
+
+    Posts.getPostByCategory(req.params.name, function(err, posts){
+
+        if(err){
+
+            throw err;
+        }
+        res.json(posts);
+    })
+      
+
+});
+
+// router.route('/posts/category/:id')
+//   .get(function (req, res) {
+//     Category.forge({id: req.params.id})
+//     .fetch({withRelated: ['posts']})
+//     .then(function (category) {
+//       var posts = category.related('posts');
+//       res.json({error: false, data: posts.toJSON()});
+//     })
+//     .catch(function (err) {
+//       res.status(500).json({error: true, data: {message: err.message}});
+//     });
+//   });
+//     // create a new category
+//   .post(function (req, res) {
+//     Category.forge({name: req.body.name})
+//     .save()
+//     .then(function (category) {
+//       res.json({error: false, data: {id: category.get('id')}});
+//     })
+//     .catch(function (err) {
+//       res.status(500).json({error: true, data: {message: err.message}});
+//     }); 
+//   });
+
+
+
 
 app.post('/api/posts' , function(req, res){
 

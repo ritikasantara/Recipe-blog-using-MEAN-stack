@@ -1,4 +1,5 @@
 var mongoose = require('mongoose');
+var Categorys = require('./categories');
 
 //Categories schema
 
@@ -59,6 +60,15 @@ module.exports.getPostById = function(id, callback){
 
     Posts.findById(id, callback);
     
+}
+
+//Get post by category
+
+module.exports.getPostByCategory = function(category, callback){
+
+
+    Posts.find({category: category}, callback);
+
 }
 
 // Add a post

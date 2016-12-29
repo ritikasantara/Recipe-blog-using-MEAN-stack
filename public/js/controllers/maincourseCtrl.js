@@ -1,17 +1,17 @@
-var app = angular.module('recipeBlog', ['ngRoute']);
+var app = angular.module('myApp', ['ngRoute'])
 
-recipeBlog.controller('maincourseCtrl', ['$scope', '$http', '$location', '$routeParams', function($scope, $http, $location, $routeParams){
+                .controller('maincourse', ['$scope', '$http', '$location', '$routeParams', function($scope, $http, $location, $routeParams){
 
-    console.log('Maincourse controller loaded...');
-    
-    $scope.getMaincourseRecipes = function(){
+                    console.log('Maincourse controller loaded...');
+                    
+                    $scope.getMaincourseRecipes = function(){
 
 
-        $http.get('/api/posts').success(function(response){
+                        $http.get('/api/posts').success(function(response){
 
-            $scope.posts = response; 
-        })
-    }
+                            $scope.maincourseRecipes = response; 
+                        })
+                    }
 
-}]);
+                }]);
 

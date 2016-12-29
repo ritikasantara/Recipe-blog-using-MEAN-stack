@@ -31,6 +31,15 @@ module.exports.getCategories = function(callback, limit){
 
 }
 
+// Get a single category
+
+module.exports.getCategoryById = function(id, callback){
+
+    Categories.findById(id, callback);
+    
+}
+
+
 // Add categories
 
 module.exports.addCategories = function(category, callback){
