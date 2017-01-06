@@ -1,134 +1,133 @@
-var thisApp = angular.module('recipeBlog', ['ui.router']);
+// var thisApp = angular.module('recipeBlog', ['ui.router']);
 
-thisApp.config(function($stateProvider, $urlRouterProvider) {
+// thisApp.config(function($stateProvider, $urlRouterProvider) {
    
-    $stateProvider
-        .state('home', {
-            url: '/home',
-            controller: 'HomeController',
-            templateUrl: 'views/home.html'
+//     $stateProvider
+//         .state('home', {
+//             url: '/home',
+//             controller: 'HomeController',
+//             templateUrl: 'views/home.html'
 
-        });
+//         });
         
-    $urlRouterProvider.otherwise('/home');
+//     $urlRouterProvider.otherwise('/home');
         
-});
+// });
 
 
+var app = angular.module('recipeBlog', ['ngRoute'])
 
-// var app = angular.module('recipeBlog', ['ngRoute'])
+                    .config(function($routeProvider){
 
-//                     .config(function($routeProvider){
+                            $routeProvider
 
-//                             $routeProvider
+                                .when('/', 
+                                {
+                                    controller: 'HomeController',
+                                    templateUrl: 'views/home.html'
+                                })
 
-//                                 .when('/', 
-//                                 {
-//                                     controller: 'homeController',
-//                                     templateUrl: 'views/home.html'
-//                                 })
+                                .when('/home', {
 
-//                                 .when('/home', {
+                                    controller: 'HomeController',
+                                    templateUrl: 'views/home.html'
 
-//                                     controller: 'homeController',
-//                                     templateUrl: 'views/home.html'
+                                })
 
-//                                 })
+                                .when('/recipes/maincourse', {
 
-//                                 .when('/recipes/maincourse', {
+                                    controller: 'maincourse',
+                                    templateUrl: 'views/maincourse_recipes.html'
 
-//                                     controller: 'maincourse',
-//                                     templateUrl: 'views/maincourse_recipes.html'
+                                })
 
-//                                 })
+                                .when('/recipes/maincourse/:id', {
 
-//                                 .when('/recipes/maincourse/:id', {
+                                    controller: 'maincourse',
+                                    templateUrl: 'views/recipe_details.html'
+                                })
 
-//                                     controller: 'maincourse',
-//                                     templateUrl: 'views/recipe_details.html'
-//                                 })
+                                .when('/recipes/snacks', {
 
-//                                 .when('/recipes/snacks', {
+                                    controller: 'snacksCtrl',
+                                    templateUrl: 'views/snacks_recipes.html'
+                                })
 
-//                                     controller: 'snacksCtrl',
-//                                     templateUrl: 'views/snacks_recipes.html'
-//                                 })
+                                .when('/recipes/snacks/:id', {
 
-//                                 .when('/recipes/snacks/:id', {
+                                    controller: 'snacksCtrl',
+                                    templateUrl: 'views/recipe_details.html'
+                                })
 
-//                                     controller: 'snacksCtrl',
-//                                     templateUrl: 'views/recipe_details.html'
-//                                 })
+                                .when('/recipes/starters', {
 
-//                                 .when('/recipes/starters', {
+                                    controller: 'startersCtrl',
+                                    templateUrl: 'views/starters_recipes.html'
+                                })
 
-//                                     controller: 'startersCtrl',
-//                                     templateUrl: 'views/starters_recipes.html'
-//                                 })
+                                .when('/recipes/starters/:id', {
 
-//                                 .when('/recipes/starters/:id', {
+                                    controller: 'startersCtrl',
+                                    templateUrl: 'views/recipe_details.html'
+                                })
 
-//                                     controller: 'startersCtrl',
-//                                     templateUrl: 'views/recipe_details.html'
-//                                 })
+                                .when('/recipes/desserts', {
 
-//                                 .when('/recipes/desserts', {
+                                    controller: 'dessertsCtrl',
+                                    templateUrl: 'views/desserts_recipes.html'
+                                })
 
-//                                     controller: 'dessertsCtrl',
-//                                     templateUrl: 'views/desserts_recipes.html'
-//                                 })
+                                .when('/recipes/desserts/:id', {
 
-//                                 .when('/recipes/desserts/:id', {
+                                    controller: 'dessertsCtrl',
+                                    templateUrl: 'views/recipe_details.html'
+                                })
 
-//                                     controller: 'dessertsCtrl',
-//                                     templateUrl: 'views/recipe_details.html'
-//                                 })
+                                .when('/recipes/beverages', {
 
-//                                 .when('/recipes/beverages', {
+                                    controller: 'beveragesCtrl',
+                                    templateUrl: 'views/beverages_recipes.html'
+                                })
 
-//                                     controller: 'beveragesCtrl',
-//                                     templateUrl: 'views/beverages_recipes.html'
-//                                 })
+                                .when('/recipes/beverages/:id', {
 
-//                                 .when('/recipes/beverages/:id', {
+                                    controller: 'beveragesCtrl',
+                                    templateUrl: 'views/recipe_details.html'
+                                })
 
-//                                     controller: 'beveragesCtrl',
-//                                     templateUrl: 'views/recipe_details.html'
-//                                 })
+                                .when('/recipes/popular', {
 
-//                                 .when('/recipes/popular', {
+                                    controller: 'popularCtrl',
+                                    templateUrl: 'views/popular_recipes.html'
+                                })
 
-//                                     controller: 'popularCtrl',
-//                                     templateUrl: 'views/popular_recipes.html'
-//                                 })
+                                .when('/recipes/popular/:id', {
 
-//                                 .when('/recipes/popular/:id', {
-
-//                                     controller: 'popularCtrl',
-//                                     templateUrl: 'views/recipe_details.html'
-//                                 })
+                                    controller: 'popularCtrl',
+                                    templateUrl: 'views/recipe_details.html'
+                                })
                                 
-//                                 .when('/recipes/add', {
+                                .when('/recipes/add', {
 
-//                                     controller: 'adminCtrl',
-//                                     templateUrl: 'views/addRecipes.html'
-//                                 })
+                                    controller: 'adminCtrl',
+                                    templateUrl: 'views/addRecipes.html'
+                                })
 
-//                                 .when('/recipes/edit', {
+                                .when('/recipes/edit', {
 
-//                                     controller: 'adminCtrl',
-//                                     templateUrl: 'views/editRecipes.html'
-//                                 })
+                                    controller: 'adminCtrl',
+                                    templateUrl: 'views/editRecipes.html'
+                                })
 
-//                                 .when('/article/:id', {
+                                .when('/article/:id', {
 
-//                                     controller: 'articleCtrl',
-//                                     templateUrl: 'views/article_details.html'
-//                                 })
+                                    controller: 'articleCtrl',
+                                    templateUrl: 'views/article_details.html'
+                                })
                         
-//                                 .otherwise({ redirectTo: '/' });
+                                .otherwise({ redirectTo: '/' });
                                 
-//                         });
+                        });
 
 
               

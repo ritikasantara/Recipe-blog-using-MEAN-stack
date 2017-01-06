@@ -1,4 +1,4 @@
-angular.module('recipeBlog', ['ui.router'])
+angular.module('recipeBlog')
 	.controller('HomeController', ['$scope', '$http', function($scope, $http){
 		console.log('Home controller loaded...');
 		$scope.getMaincourseRecipes = function(){
@@ -9,13 +9,3 @@ angular.module('recipeBlog', ['ui.router'])
 
 	}]);
 
-// var myApp = angular.module("myApp", []);
-
-// (function(app){
-//   "use strict";
-//   app.controller("productController", function($scope, $http){
-//     $http.get('data/data.json').then(function(prd){
-//       $scope.prd = prd.data;
-//     });
-//   });
-// })(myApp);
