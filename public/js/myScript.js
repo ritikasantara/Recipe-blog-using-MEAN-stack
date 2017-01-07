@@ -22,132 +22,132 @@ $(document).ready(function () {
 
     });
 
-    $(document).on("scroll", onScroll);
+//     $(document).on("scroll", onScroll);
     
-    //smoothscroll effect
+//     //smoothscroll effect
     
-    $('a[href^="#"]').on('click', function (e) {
+//     $('a[href^="#"]').on('click', function (e) {
 
-        e.preventDefault();
+//         e.preventDefault();
 
-        $(document).off("scroll");
+//         $(document).off("scroll");
         
-        $('a').each(function () {
+//         $('a').each(function () {
 
-            $(this).removeClass('active');
+//             $(this).removeClass('active');
 
-        })
+//         })
 
-        $(this).addClass('active');
+//         $(this).addClass('active');
       
-        var target = this.hash,
-            menu = target;
+//         var target = this.hash,
+//             menu = target;
 
-        $target = $(target);
+//         $target = $(target);
 
-        $('html, body').stop().animate({
+//         $('html, body').stop().animate({
 
-            'scrollTop': $target.offset().top+2
-        }, 500, 'swing', function () {
+//             'scrollTop': $target.offset().top+2
+//         }, 500, 'swing', function () {
 
-            window.location.hash = target;
+//             window.location.hash = target;
 
-            $(document).on("scroll", onScroll);
+//             $(document).on("scroll", onScroll);
 
-        });
-    });
+//         });
+//     });
 
-    $('.create_recipe').on('click',function(){
+//     $('.create_recipe').on('click',function(){
 
-        $('.modal').css('display','block').css('top','0');
+//         $('.modal').css('display','block').css('top','0');
 
-    });
+//     });
 
-    $('#close_modal').on('click',function(){
+//     $('#close_modal').on('click',function(){
 
-        $('.modal').css('top','-100vh');
+//         $('.modal').css('top','-100vh');
 
-    })
+//     })
 
  
-});
+// });
 
 
-function onScroll(event){
+// function onScroll(event){
 
-    var scrollPos = $(document).scrollTop();
+//     var scrollPos = $(document).scrollTop();
 
-    $('nav ul li a').each(function () {
+//     $('nav ul li a').each(function () {
 
-        var currLink = $(this);
+//         var currLink = $(this);
 
-        var refElement = $(currLink.attr("href"));
+//         var refElement = $(currLink.attr("href"));
 
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+//         if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
 
-            $('nav ul li a').removeClass("active");
+//             $('nav ul li a').removeClass("active");
 
-            currLink.addClass("active");
-            $('.create_recipe').hide().delay(3000).fadeIn(2000);
+//             currLink.addClass("active");
+//             $('.create_recipe').hide().delay(3000).fadeIn(2000);
             
 
-        //search box border color changing effect on scroll
+//         //search box border color changing effect on scroll
 
-        if (currLink.hasClass("maincourse_btn")) {
+//         if (currLink.hasClass("maincourse_btn")) {
 
-                $('#search_input').css('border','1px solid #edc563');
+//                 $('#search_input').css('border','1px solid #edc563');
 
 
-        }
+//         }
 
-        else if (currLink.hasClass("snacks_btn")) {
+//         else if (currLink.hasClass("snacks_btn")) {
 
-                $('#search_input').css('border','1px solid #f07165');
+//                 $('#search_input').css('border','1px solid #f07165');
                 
 
 
-        }
+//         }
 
-        else if (currLink.hasClass("starter_btn")) {
+//         else if (currLink.hasClass("starter_btn")) {
 
-            $('#search_input').css('border','1px solid #f0a439');
+//             $('#search_input').css('border','1px solid #f0a439');
 
-        }
+//         }
 
-        else if (currLink.hasClass("desserts_btn")) {
+//         else if (currLink.hasClass("desserts_btn")) {
 
-            $('#search_input').css('border','1px solid #d63270');
+//             $('#search_input').css('border','1px solid #d63270');
 
-        }
+//         }
         
-        else if (currLink.hasClass("beverages_btn")) {
+//         else if (currLink.hasClass("beverages_btn")) {
 
-            $('#search_input').css('border','1px solid #7ae5af');
+//             $('#search_input').css('border','1px solid #7ae5af');
 
-        }
+//         }
 
-        else if (currLink.hasClass("popular_btn")) {
+//         else if (currLink.hasClass("popular_btn")) {
 
-            $('#search_input').css('border','1px solid #ba81ef');
+//             $('#search_input').css('border','1px solid #ba81ef');
 
-        }
+//         }
         
-        else{
+//         else{
 
-            $('#search_input').css('border','1px solid #fbfaa5');
+//             $('#search_input').css('border','1px solid #fbfaa5');
 
-        }
+//         }
         
-    }
-    else{
+//     }
+//     else{
 
-        currLink.removeClass("active");
+//         currLink.removeClass("active");
 
-    }
+//     }
 
         
     });
-}
+//
 
 
 

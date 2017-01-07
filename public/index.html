@@ -17,12 +17,12 @@
 
 
     <script src="bower_components/angular/angular.min.js"></script>
-	<!--<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>-->
-	<script src="bower_components/angular-route/angular-route.min.js"></script>
+	<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<!--<script src="bower_components/angular-route/angular-route.min.js"></script>-->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
 
 
-    <script src="js/myScript.js"></script>
+    <!--<script src="js/myScript.js"></script>-->
 	<script src="app.js"></script>
 	<script src="js/controllers/homeCtrl.js"></script>
 	
@@ -40,13 +40,13 @@
          
 		 <ul>
 
-			<li><a href="#home" class="active home_btn">HOME</a></li>
-			<li><a href="#maincourse" class="maincourse_btn">MAINCOURSE</a></li>
-			<li><a href="#snacks" class="snacks_btn">SNACKS</a></li>
-			<li><a href="#starter" class="starter_btn">STARTER</a></li>
-			<li><a href="#desserts" class="desserts_btn">DESSERTS</a></li>
-			<li><a href="#beverages" class="beverages_btn">BEVERAGES</a></li>
-			<li><a href="#popular" class="popular_btn">POPULAR</a></li>
+			<li><a href ui-sref="home({scrollTo: 'home'})" class="active home_btn">HOME</a></li>
+			<li><a href ui-sref="maincourse({scrollTo: 'maincourse'})" class="maincourse_btn">MAINCOURSE</a></li>
+			<li><a href ui-sref="snacks({scrollTo: 'snacks'})" class="snacks_btn">SNACKS</a></li>
+			<li><a href ui-sref="starters({scrollTo: 'starter'})" class="starter_btn">STARTERS</a></li>
+			<li><a href ui-sref="desserts({scrollTo: 'desserts'})" class="desserts_btn">DESSERTS</a></li>
+			<li><a href ui-sref="beverages({scrollTo: 'beverages'})" class="beverages_btn">BEVERAGES</a></li>
+			<li><a href ui-sref="popular({scrollTo: 'popular'})" class="popular_btn">POPULAR</a></li>
 
 		 </ul>
 
@@ -61,7 +61,8 @@
 
 
 	  
-	<div ng-view></div>
+	<!--<div ng-view></div>-->
+	<div ui-view></div>
 
 
 
