@@ -5,7 +5,7 @@ thisApp.config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
 
         .state('home', {
-            url: '/home',
+            url: '/',
             controller: 'HomeController',
             templateUrl: 'views/home.html'
 
@@ -45,9 +45,46 @@ thisApp.config(function($stateProvider, $urlRouterProvider) {
             url: '/:scrollTo',     
             controller: 'HomeController',  
             templateUrl: 'views/home.html'
+        })
+
+        .state('maincourse_recipes', {
+            url: '/recipes/maincourse',     
+            controller: 'HomeController', 
+            templateUrl: 'views/maincourse_recipes.html'
+        })
+
+        .state('snacks_recipes', {
+            url: '/recipes/snacks',     
+            controller: 'HomeController', 
+            templateUrl: 'views/snacks_recipes.html'
+        })
+
+        .state('starters_recipes', {
+            url: '/recipes/starters',     
+            controller: 'HomeController', 
+            templateUrl: 'views/starters_recipes.html'
+        })
+
+        .state('desserts_recipes', {
+            url: '/recipes/desserts',     
+            controller: 'HomeController', 
+            templateUrl: 'views/desserts_recipes.html'
+        })
+
+        .state('beverages_recipes', {
+            url: '/recipes/beverages',     
+            controller: 'HomeController', 
+            templateUrl: 'views/beverages_recipes.html'
+        })
+
+        .state('popular_recipes', {
+            url: '/recipes/popular',     
+            controller: 'HomeController', 
+            templateUrl: 'views/popular_recipes.html'
         });
+
         
-    $urlRouterProvider.otherwise('/home');
+    $urlRouterProvider.otherwise('/');
         
 });
 

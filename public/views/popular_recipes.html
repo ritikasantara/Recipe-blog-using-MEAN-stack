@@ -1,0 +1,13 @@
+<div ng-init="getPopularRecipes()">
+
+    <div ng-repeat="popularRecipe in popularRecipes">
+
+        <div>{{ popularRecipe.title}}</div>
+
+        <img ng-src="{{ popularRecipe.image }}" width="190" height="100"/>
+
+        <div id="post_date"> {{ popularRecipe.create_date }} </div>
+
+        <div> {{ popularRecipe.description }} </div>
+
+</div>       

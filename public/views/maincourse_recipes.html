@@ -1,1 +1,13 @@
-test
+<div ng-init="getMaincourseRecipes()">
+
+    <div ng-repeat="maincourseRecipe in maincourseRecipes">
+
+        <div>{{ maincourseRecipe.title}}</div>
+
+        <img ng-src="{{ maincourseRecipe.image }}" width="190" height="100"/>
+
+        <div id="post_date"> {{ maincourseRecipe.create_date }} </div>
+
+        <div> {{ maincourseRecipe.description }} </div>
+
+</div>       

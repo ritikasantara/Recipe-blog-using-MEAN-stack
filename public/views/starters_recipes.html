@@ -1,0 +1,13 @@
+<div ng-init="getStartersRecipes()">
+
+    <div ng-repeat="startersRecipe in startersRecipes">
+
+        <div>{{ startersRecipe.title}}</div>
+
+        <img ng-src="{{ startersRecipe.image }}" width="190" height="100"/>
+
+        <div id="post_date"> {{ startersRecipe.create_date }} </div>
+
+        <div> {{ startersRecipe.description }} </div>
+
+</div>       
