@@ -1,6 +1,6 @@
 angular.module('recipeBlog')
 
-	.controller('HomeController', ['$scope', '$http', function($scope, $http){
+	.controller('HomeController', ['$scope', '$http', '$stateParams', function($scope, $http, $stateParams){
 
 		console.log('Home controller loaded...');
 
@@ -15,13 +15,12 @@ angular.module('recipeBlog')
 				
 					$scope.maincourseRecipes = response.data;  
 				
-			}, 
+				}, 
 
-			function(error) {  
-				console.log("Error: " + error);  
-			}); 
+				function(error) {  
+					console.log("Error: " + error);  
+				});
 
-				
 			}
 
 		// Get snacks recipes
@@ -108,6 +107,28 @@ angular.module('recipeBlog')
 
 				
 			}
+
+		// Get recipes by id
+
+			$scope.getRecipe = function(){
+
+				var id = $stateParams.id;
+
+				$http.get('/api/posts/' +id).then(function(response){
+				
+					$scope.recipe = response.data;  
+					
+				}, 
+
+				function(error) {  
+					console.log("Error: " + error);  
+				}); 
+
+		
+			}
+		
+
+	
 
 	}]);
 

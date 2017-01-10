@@ -81,7 +81,14 @@ thisApp.config(function($stateProvider, $urlRouterProvider) {
             url: '/recipes/popular',     
             controller: 'HomeController', 
             templateUrl: 'views/popular_recipes.html'
+        })
+
+        .state('recipe_by_id', {
+            url: '/recipes/details/:id',     
+            controller: 'HomeController', 
+            templateUrl: 'views/recipe_details.html'
         });
+
 
         
     $urlRouterProvider.otherwise('/');
