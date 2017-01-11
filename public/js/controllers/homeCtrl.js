@@ -126,6 +126,44 @@ angular.module('recipeBlog')
 
 		
 			}
+
+		// Get articles
+
+			$scope.getArticles = function(){
+
+
+				$http.get('/api/articles').then(function(response){
+				
+					$scope.articles = response.data;  
+					
+				}, 
+
+				function(error) {  
+					console.log("Error: " + error);  
+				}); 
+
+		
+			}
+
+		// Get article by id
+
+			$scope.getArticle = function(){
+
+				var id = $stateParams.id;
+
+				$http.get('/api/articles/' +id).then(function(response){
+				
+					$scope.article = response.data;  
+					
+				}, 
+
+				function(error) {  
+					console.log("Error: " + error);  
+				}); 
+
+		
+			}
+		
 		
 
 	

@@ -87,6 +87,12 @@ thisApp.config(function($stateProvider, $urlRouterProvider) {
             url: '/recipes/details/:id',     
             controller: 'HomeController', 
             templateUrl: 'views/recipe_details.html'
+        })
+
+        .state('article_by_id', {
+            url: '/articles/details/:id',     
+            controller: 'HomeController', 
+            templateUrl: 'views/articleDetails.html'
         });
 
 

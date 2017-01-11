@@ -34,12 +34,6 @@ var articlesSchema = mongoose.Schema({
         
     },
 
-    author:{
-
-        type: String
-        
-    },
-
 
     create_date:{
 
