@@ -57,20 +57,20 @@ $(document).ready(function () {
 //         });
 //     });
 
-//     $('.create_recipe').on('click',function(){
+    $('.create_recipe').on('click',function(){
 
-//         $('.modal').css('display','block').css('top','0');
+        $('.modal').css('display','block').css('top','0');
 
-//     });
+    });
 
-//     $('#close_modal').on('click',function(){
+    $('#close_modal').on('click',function(){
 
-//         $('.modal').css('top','-100vh');
+        $('.modal').css('top','-100vh');
 
-//     })
+    })
 
  
-// });
+
 
 
 // function onScroll(event){

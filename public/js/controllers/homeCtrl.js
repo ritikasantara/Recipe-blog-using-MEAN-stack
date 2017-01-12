@@ -163,6 +163,18 @@ angular.module('recipeBlog')
 
 		
 			}
+
+		// Adding a recipe
+
+			$scope.addMaincourseRecipe = function(){
+
+				$http.post('/api/posts/', $scope.maincourseRecipe).then(function(response){
+
+					window.location.href = '#!/recipes/maincourse';
+
+				})
+
+			}		
 		
 		
 

@@ -225,7 +225,7 @@ nav li a:hover{
 
 /* modal */
 
-/*.modal{
+.modal{
 
     background: rgba(0,0,0,0.9);
     position: fixed;
@@ -233,6 +233,7 @@ nav li a:hover{
     left: 0;
     width: 100%;
     height: 100vh;
+    overflow-y: auto;
     z-index: 100;
     transition: all 0.5s ease-out;
     
@@ -254,7 +255,7 @@ nav li a:hover{
     
 
 
-}*/
+}
 
 .create_recipe{
 
@@ -270,7 +271,7 @@ nav li a:hover{
     
 }
 
-/*#close_modal{
+#close_modal{
 
     position: relative;
     top: 2%;
@@ -342,7 +343,7 @@ nav li a:hover{
     background: #4b0082;
     cursor: pointer;
 
-}*/
+}
 
 
 
