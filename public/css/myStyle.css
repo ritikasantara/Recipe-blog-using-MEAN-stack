@@ -223,21 +223,16 @@ nav li a:hover{
 
 
 
-/* modal */
+/* Forms */
 
-.modal{
+.forms{
 
-    background: rgba(0,0,0,0.9);
-    position: fixed;
-    top: 0;
-    left: 0;
+    background: #f0fff0;
     width: 100%;
-    height: 100vh;
+    height: 200vh;
     overflow-y: auto;
-    z-index: 100;
     transition: all 0.5s ease-out;
-    
-    display: none;
+
     
 }
 
@@ -271,27 +266,16 @@ nav li a:hover{
     
 }
 
-#close_modal{
+
+
+#category_form{
+
 
     position: relative;
-    top: 2%;
-    left: 80%;
-    z-index: 100;
-    color: #ccc;
-    font-size: 1.5em;
-    font-weight: bolder;
-    background: #696969;
-    border-radius: 100%;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    line-height: 35px;
-    cursor: pointer;
-
-
+    top: 300px;
 }
 
-.modal_form_posts{
+.form-style{
 
     width: 70%;
     display: block;
@@ -321,10 +305,7 @@ nav li a:hover{
 
 .modal_form_posts input[type='textarea']{
 
-
-    height: 300px;
     border: none;
-    width: 100%;
     font-size: 15px;
     color: #696969;
     margin-bottom: 20px;

@@ -6,14 +6,14 @@
 		 <span class="login_button auth_button">Login</span>
 		 <span class="signup_button auth_button">Sign Up</span>
          <p id="sitename">foodTube</p>
-		 <a href="#!/recipes/add"><button class="add_recipe" ng-click="add_recipe()">Add Recipes</button></a>
+		 <a href="#!/recipes/add"><button class="add_recipe">Add Recipes</button></a>
 
 	  </section>
 
       <section class="sect two blur" id="maincourse">
 
 		  <p class="title">MAINCOURSE</p>
-		  <a href="#!/recipes/maincourse" class="all_recipes_title">All Maincourse</a>
+		  <a href ui-sref="#!/recipes/maincourse" class="all_recipes_title">All Maincourse</a>
 
         <!-- Blog posts -->
 
@@ -32,7 +32,7 @@
 
 				   <div> {{ maincourseRecipe.description }} </div>
 
-				  <div id="readmore"><a href="#!/recipes/details/{{ maincourseRecipe._id }}">Read More.. </a></div>
+				  <div id="readmore"><a href ui-sref="#!/recipes/details/{{ maincourseRecipe._id }}">Read More.. </a></div>
                    
 
 			  </div>
@@ -44,33 +44,6 @@
 
 	  </section>
 
-	<!-- modal maincourse 	-->
-
-	<div id="modal_maincourse" class="modal">
-
-		<div id="close_modal">&times;</div>
-  
-		<div class="modal_form_posts">
-
-			<h2> Post Maincourse Recipe </h2>
-			
-			<form enctype='multipart/formdata' ng-submit="addMaincourseRecipe()">	
-
-				<input type="text" ng-model="maincourseRecipe.title" placeholder="  Title">
-				<input type="text" placeholder="  Category">
-				<label for="recipe_image">Image</label>
-				<input type="file" id="recipe_image">
-				<textarea cols="100" rows="20" ng-model="maincourseRecipe.description"  placeholder="  Contents"></textarea>
-				<button type="submit">POST</button>
-
-			</form>
-
-
-		</div>
-
-		
-
-	</div>	  
 
 	<!-- Article -->
 
@@ -88,7 +61,7 @@
 				<img ng-src="{{ article.image }}" width="250" height="200"/>   
 
 				<p id="content">
-						{{ article.content }} <span id="readmore_article"><a href="#!/articles/details/{{ article._id }}"><em>Read More..</em> </a></span>
+						{{ article.content }} <span id="readmore_article"><a href ui-sref="#!/articles/details/{{ article._id }}"><em>Read More..</em> </a></span>
 		
 		       </p>
 
@@ -101,7 +74,7 @@
       <section class="sect three blur" id="snacks">
 
 		  <p class="title">SNACKS</p>
-		  <a href="#!/recipes/snacks" class="all_recipes_title">All Snacks</a>
+		  <a href ui-sref="#!/recipes/snacks" class="all_recipes_title">All Snacks</a>
 
 	    <!-- Blog posts -->
 
@@ -119,7 +92,7 @@
 
 				   <div> {{ snacksRecipe.description }} </div>
 
-				  <div id="readmore"><a href="#!/recipes/details/{{ snacksRecipe._id }}">Read More.. </a></div>
+				  <div id="readmore"><a href ui-sref="#!/recipes/details/{{ snacksRecipe._id }}">Read More.. </a></div>
                    
 
 			  </div>
@@ -148,7 +121,7 @@
 
 				<p id="content">{{ article.content }} 
 					
-					<span id="readmore_article"><a href="#!/articles/details/{{ article._id }}"><em>Read More..</em></a></span>
+					<span id="readmore_article"><a href ui-sref="#!/articles/details/{{ article._id }}"><em>Read More..</em></a></span>
 		
 		       </p>
 
@@ -159,7 +132,7 @@
       <section class="sect four blur" id="starter">
 
 		  <p class="title">STARTER</p>
-		  <a href="#!/recipes/starters" class="all_recipes_title">All Starters</a>
+		  <a href ui-sref="#!/recipes/starters" class="all_recipes_title">All Starters</a>
 
 
 		<!-- Blog posts -->
@@ -177,7 +150,7 @@
 
 				   <div> {{ startersRecipe.description }} </div>
 
-				  <div id="readmore"><a href="#!/recipes/details/{{ startersRecipe._id }}">Read More.. </a></div>
+				  <div id="readmore"><a href ui-sref="#!/recipes/details/{{ startersRecipe._id }}">Read More.. </a></div>
                    
 
 			  </div>
@@ -203,7 +176,7 @@
 
 				<p id="content">{{ article.content }} 
 					
-					<span id="readmore_article"><a href="#!/articles/details/{{ article._id }}"><em>Read More..</em></a></span>
+					<span id="readmore_article"><a href ui-sref="#!/articles/details/{{ article._id }}"><em>Read More..</em></a></span>
 		
 		       </p>
 
@@ -215,7 +188,7 @@
       <section class="sect five blur" id="desserts">
 		  
 		  <p class="title">DESSERTS</p>
-		  <a href="#!/recipes/desserts" class="all_recipes_title">All Desserts</a>
+		  <a href ui-sref="#!/recipes/desserts" class="all_recipes_title">All Desserts</a>
 
 
 		<!-- Blog posts -->
@@ -234,7 +207,7 @@
 
 				   <div> {{ dessertsRecipe.description }} </div>
 
-				  <div id="readmore"><a href="#!/recipes/details/{{ dessertsRecipe._id }}">Read More.. </a></div>
+				  <div id="readmore"><a href ui-sref="#!/recipes/details/{{ dessertsRecipe._id }}">Read More.. </a></div>
                    
 
 			  </div>
@@ -261,7 +234,7 @@
 
 				<p id="content">{{ article.content }} 
 					
-					<span id="readmore_article"><a href="#!/articles/details/{{ article._id }}""><em>Read More..</em></a></span>
+					<span id="readmore_article"><a href ui-sref="#!/articles/details/{{ article._id }}""><em>Read More..</em></a></span>
 		
 		       </p>
 
@@ -274,7 +247,7 @@
 	  <section class="sect six blur" id="beverages">
 		  
 		  <p class="title">BEVERAGES</p>
-		  <a href="#!/recipes/beverages" class="all_recipes_title">All Beverages</a>
+		  <a href ui-sref="#!/recipes/beverages" class="all_recipes_title">All Beverages</a>
 
 
 		<!-- Blog posts -->
@@ -293,7 +266,7 @@
 
 				   <div> {{ beveragesRecipe.description }} </div>
 
-				  <div id="readmore"><a href="#!/recipes/details/{{ beveragesRecipe._id }}">Read More.. </a></div>
+				  <div id="readmore"><a href ui-sref="#!/recipes/details/{{ beveragesRecipe._id }}">Read More.. </a></div>
                    
 
 			  </div>
@@ -322,7 +295,7 @@
 
 				<p id="content">{{ article.content }} 
 					
-					<span id="readmore_article"><a href="#!/articles/details/{{ article._id }}"><em>Read More..</em></a></span>
+					<span id="readmore_article"><a href ui-sref="#!/articles/details/{{ article._id }}"><em>Read More..</em></a></span>
 		
 		       </p>
 
@@ -333,7 +306,7 @@
 	  <section class="sect seven blur" id="popular">
 
 		  <p class="title">POPULAR</p>
-		  <a href="#!/recipes/popular" class="all_recipes_title">All Popular</a>
+		  <a href ui-sref="#!/recipes/popular" class="all_recipes_title">All Popular</a>
 
 
 		<!-- Blog posts -->
@@ -352,7 +325,7 @@
 
 				   <div> {{ popularRecipe.description }} </div>
 
-				  <div id="readmore"><a href="#!/recipes/details/{{ popularRecipe._id }}">Read More.. </a></div>
+				  <div id="readmore"><a href ui-sref="#!/recipes/details/{{ popularRecipe._id }}">Read More.. </a></div>
                    
 
 			  </div>

@@ -95,9 +95,11 @@ thisApp.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: 'views/articleDetails.html'
         })
 
-        .state('add_maincourseRecipe', {
-            url: '/maincourse/add',     
-            controller: 'HomeController'
+        .state('add_recipes', {
+            url: '/recipes/add',     
+            controller: 'HomeController',
+            templateUrl: 'views/addRecipes.html'
+
             
         });
 
@@ -117,6 +119,10 @@ thisApp.run(function($rootScope, $location, $anchorScroll, $stateParams, $timeou
     }, 200)
   });
 })
+
+thisApp.config(['$qProvider', function ($qProvider) {
+    $qProvider.errorOnUnhandledRejections(false);
+}]);
 
 
 

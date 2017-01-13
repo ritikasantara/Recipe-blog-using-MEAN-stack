@@ -1,0 +1,120 @@
+ <!-- Add recipe form -->
+<div id="recipe_form">
+    <form id="category_form">
+
+        Select a Category:
+
+        <select ng-model="myCategory">
+            <option value="">
+            <option value="Maincourse">Maincourse
+            <option value="Snacks">Snacks
+            <option value="Starters">Starters
+            <option value="Desserts">Desserts
+            <option value="Beverages">Beverages
+            <option value="Popular">Popular   
+        </select>
+
+    </form>
+
+
+    <div ng-switch="myCategory">
+
+    <!--Switch case for Maincourse form -->
+
+        <div ng-switch-when="Maincourse">
+
+            <div id="form_maincourse" class="forms">
+                <div class="form-style">
+                    <h2> Post Maincourse Recipe </h2>
+                    
+                    <form enctype='multipart/formdata' ng-submit="addMaincourseRecipe()">	
+                        <label id="title_label">Title</label>
+                        <input type="text" ng-model="maincourseRecipe.title" placeholder="  Title">
+                        <label id="category_label">category</label>
+                        <input type="text" placeholder="  Maincourse" value="Maincourse" ng-model="maincourseRecipe.category">
+                        <label id="image_label">Image</label>
+                        <input type="file" id="recipe_image" ng-model="maincourseRecipe.image">
+                        <textarea cols="100" rows="20" ng-model="maincourseRecipe.description"  placeholder="  Contents"></textarea>
+                        <button type="submit">POST RECIPE</button>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <div ng-switch-when="Snacks">
+
+
+        <!--Switch case for Snacks form -->
+
+                <div id="form_snacks" class="forms">
+                    <div class="form-style">
+                        <h2> Post Snacks Recipe </h2>
+                        
+                        <form enctype='multipart/formdata' ng-submit="addSnacksRecipe()">	
+
+                            <input type="text" ng-model="snacksRecipe.title" placeholder="  Title">
+                            <input type="text" placeholder="  Snacks" value="Snacks" ng-model="snacksRecipe.category">
+                            <label for="recipe_image" id="image_label" >Image</label>
+                            <input type="file" id="recipe_image" ng-model="snacksRecipe.image">
+                            <textarea cols="100" rows="20" ng-model="snacksRecipe.description"  placeholder="  Contents"></textarea>
+                            <button type="submit">POST RECIPE</button>
+
+                        </form>
+                    </div>
+                </div>
+
+        </div>
+       
+
+        <div ng-switch-when="Starters">
+            <h1>Cars</h1>
+            <p>Read about cars.</p>
+        </div>
+
+        <div ng-switch-when="Desserts">
+            <h1>Cars</h1>
+            <p>Read about cars.</p>
+        </div>
+
+        <div ng-switch-when="Beverages">
+            <h1>Cars</h1>
+            <p>Read about cars.</p>
+        </div>
+
+        <div ng-switch-when="Popular">
+            <h1>Cars</h1>
+            <p>Read about cars.</p>
+        </div>
+
+
+
+
+    </div>
+
+   </div> 
+
+	<!--<div id="modal_maincourse" class="modal">
+  
+		<div class="modal_form_posts">
+
+			<h2> Post Maincourse Recipe </h2>
+			
+			<form enctype='multipart/formdata' ng-submit="addMaincourseRecipe()">	
+
+				<input type="text" ng-model="maincourseRecipe.title" placeholder="  Title">
+				<input type="text" placeholder="  Category">
+				<label for="recipe_image" id="image_label">Image</label>
+				<input type="file" id="recipe_image">
+				<textarea cols="100" rows="20" ng-model="maincourseRecipe.description"  placeholder="  Contents"></textarea>
+				<button type="submit">POST</button>
+
+			</form>
+
+
+		</div>
+
+		
+
+	</div>	  -->
