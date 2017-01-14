@@ -142,6 +142,15 @@ thisApp.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: 'views/addPopularRecipe.html'
 
             
+        })
+
+
+        .state('edit_recipes', {
+            url: '/recipes/edit/:id',     
+            controller: 'HomeController',
+            templateUrl: 'views/editRecipes.html'
+
+            
         });
 
 

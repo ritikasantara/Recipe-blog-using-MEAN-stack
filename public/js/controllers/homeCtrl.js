@@ -245,8 +245,25 @@ angular.module('recipeBlog')
 			}
 		
 		
+		// Update Recipes
+
 		
+			$scope.editRecipe = function(){
+
+				var id = $stateParams.id;
+
+				$http.put('/api/posts/' +id, $scope.recipe).then(function(response){
+				
+					window.history.back();  
+					
+				}, 
+
+				function(error) {  
+					console.log("Error: " + error);  
+				}); 
+
 		
+			}
 		
 		
 

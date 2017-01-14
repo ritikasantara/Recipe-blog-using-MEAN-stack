@@ -267,6 +267,38 @@ nav li a:hover{
     
 }
 
+.edit_recipe{
+
+    position: absolute;
+    top: 330px;
+    right: 0;
+    color: #ccc;
+    background: rgba(0,0,0,0.8);
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+.delete_recipe{
+
+    position: absolute;
+    top: 400px;
+    right: 0;
+    color: #ccc;
+    background: rgba(0,0,0,0.8);
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+
+
 
 
 #category_form{
