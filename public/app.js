@@ -95,10 +95,51 @@ thisApp.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: 'views/articleDetails.html'
         })
 
-        .state('add_recipes', {
-            url: '/recipes/add',     
+        
+        .state('add_maincourse_recipes', {
+            url: '/maincourse_recipes/add',     
             controller: 'HomeController',
-            templateUrl: 'views/addRecipes.html'
+            templateUrl: 'views/addMaincourseRecipe.html'
+
+            
+        })
+
+        .state('add_snacks_recipes', {
+            url: '/snacks_recipes/add',     
+            controller: 'HomeController',
+            templateUrl: 'views/addSnacksRecipe.html'
+
+            
+        })
+
+        .state('add_starters_recipes', {
+            url: '/starters_recipes/add',     
+            controller: 'HomeController',
+            templateUrl: 'views/addStartersRecipe.html'
+
+            
+        })
+
+        .state('add_desserts_recipes', {
+            url: '/desserts_recipes/add',     
+            controller: 'HomeController',
+            templateUrl: 'views/addDessertsRecipe.html'
+
+            
+        })
+
+        .state('add_beverages_recipes', {
+            url: '/beverages_recipes/add',     
+            controller: 'HomeController',
+            templateUrl: 'views/addBeveragesRecipe.html'
+
+            
+        })
+
+        .state('add_popular_recipes', {
+            url: '/popular_recipes/add',     
+            controller: 'HomeController',
+            templateUrl: 'views/addPopularRecipe.html'
 
             
         });

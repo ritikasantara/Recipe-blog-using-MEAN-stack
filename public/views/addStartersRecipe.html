@@ -1,0 +1,16 @@
+           
+                    <h2> Post Starters Recipe </h2>
+                    
+                    <form enctype='multipart/formdata' ng-submit="addStartersRecipe()">	
+
+                        <label id="title_label">Title</label>
+                        <input type="text" ng-model="startersRecipe.title" placeholder="  Title">
+                        <label id="category_label">category</label>
+                        <input type="text"  value="Maincourse" ng-model="startersRecipe.category">
+                        <label id="image_label">Image</label>
+                        <input type="text" id="recipe_image" ng-model="startersRecipe.image">
+                        <textarea cols="100" rows="20" ng-model="startersRecipe.description"  placeholder="  Contents"></textarea>
+                        <button type="submit">POST RECIPE</button>
+
+                    </form>
+             

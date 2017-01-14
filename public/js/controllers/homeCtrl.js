@@ -169,6 +169,7 @@ angular.module('recipeBlog')
 			$scope.addMaincourseRecipe = function(){
 
 				alert('controller loaded');
+				console.log($scope.maincourseRecipe);
 				$http.post('/api/posts/', $scope.maincourseRecipe).then(function(response){
 					
 					window.location.href = '#!/recipes/maincourse';
@@ -194,6 +195,58 @@ angular.module('recipeBlog')
 				})
 
 			}
+
+		// Adding a Starters recipe
+
+			$scope.addStartersRecipe = function(){
+
+				$http.post('/api/posts/', $scope.startersRecipe).then(function(response){
+
+					window.location.href = '#!/recipes/starters';
+
+				})
+
+			}
+
+		// Adding a Desserts recipe
+
+			$scope.addDessertsRecipe = function(){
+
+				$http.post('/api/posts/', $scope.dessertsRecipe).then(function(response){
+
+					window.location.href = '#!/recipes/desserts';
+
+				})
+
+			}
+
+		// Adding a Beverages recipe
+
+			$scope.addBeveragesRecipe = function(){
+
+				$http.post('/api/posts/', $scope.beveragesRecipe).then(function(response){
+
+					window.location.href = '#!/recipes/beverages';
+
+				})
+
+			}
+
+		// Adding a Popular recipe
+
+			$scope.addPopularRecipe = function(){
+
+				$http.post('/api/posts/', $scope.popularRecipe).then(function(response){
+
+					window.location.href = '#!/recipes/popular';
+
+				})
+
+			}
+		
+		
+		
+		
 		
 		
 
