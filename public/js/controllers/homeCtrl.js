@@ -264,6 +264,17 @@ angular.module('recipeBlog')
 
 		
 			}
+
+		// Delete Recipes
+
+			$scope.removeRecipe = function(id){
+
+				$http.delete('/api/posts/' +id).then(function(response){
+
+					window.history.back();
+
+				})
+			}
 		
 		
 
