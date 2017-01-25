@@ -1,15 +1,20 @@
-<div ng-init="getPopularRecipes()">
 
-    <div ng-repeat="popularRecipe in popularRecipes">
+<div  class="container col-md-12 container_popular">
 
-        <div>{{ popularRecipe.title}}</div>
+    <div ng-init="getPopularRecipes()">
 
-        <img ng-src="{{ popularRecipe.image }}" width="190" height="100"/>
+        <div ng-repeat="popularRecipe in popularRecipes" class="panel panel-default">
 
-        <div id="post_date"> {{ popularRecipe.create_date }} </div>
+            <div class="recipe_title well well-sm">{{ popularRecipe.title}}</div>
 
-        <div> {{ popularRecipe.description }} </div>
+            <img ng-src="{{ popularRecipe.image }}" width="190" height="100"/>
 
-        <div id="read_recipe"><a href="#!/recipes/details/{{ popularRecipe._id }}">Read More.. </a></div>
+            <div id="post_date_recipe">Posted on &nbsp; {{ popularRecipe.create_date }} </div>
 
-</div>       
+            <div class="recipe_description"> {{ popularRecipe.description }} </div>
+
+            <div id="read_recipe"><a href="#!/recipes/details/{{ popularRecipe._id }}">Read More.. </a></div>
+
+    </div>  
+
+</div>     

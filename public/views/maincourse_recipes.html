@@ -1,22 +1,25 @@
 
-<div  class="all_recipes_container">
-<div ng-init="getMaincourseRecipes()" class="recipe_wrapper">
+<div  class="container col-md-12 container_maincourse">
 
-    <div ng-repeat="maincourseRecipe in maincourseRecipes">
+    <div ng-init="getMaincourseRecipes()">
 
-        <div class="recipe_title">{{ maincourseRecipe.title}}</div>
+        <div ng-repeat="maincourseRecipe in maincourseRecipes" class="panel panel-default">
 
-        <img ng-src="{{ maincourseRecipe.image }}" width="190" height="100"/>
+            <div class="recipe_title well well-sm">{{ maincourseRecipe.title}}</div>
 
-        <div id="post_date"> {{ maincourseRecipe.create_date }} </div>
+            <img ng-src="{{ maincourseRecipe.image }}" width="230" height="150"/>
 
-        <div class="recipe_description"> {{ maincourseRecipe.description }} </div>
+            <div id="post_date_recipe">Posted on &nbsp; {{ maincourseRecipe.create_date }} </div>
 
-        <div id="read_recipe"><a href="#!/recipes/details/{{ maincourseRecipe._id }}">Read More.. </a></div>
+            <div class="recipe_description"> {{ maincourseRecipe.description }} </div>
+
+            <div id="read_recipe"><a href="#!/recipes/details/{{ maincourseRecipe._id }}">Read More.. </a></div>
 
         
-    </div>  
 
-</div>       
+            
+        </div>  
+
+    </div>       
 
 </div>

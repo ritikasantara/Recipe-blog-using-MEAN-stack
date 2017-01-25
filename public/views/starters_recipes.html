@@ -1,15 +1,20 @@
-<div ng-init="getStartersRecipes()">
 
-    <div ng-repeat="startersRecipe in startersRecipes">
+<div  class="container col-md-12 container_starters">
 
-        <div>{{ startersRecipe.title}}</div>
+    <div ng-init="getStartersRecipes()">
 
-        <img ng-src="{{ startersRecipe.image }}" width="190" height="100"/>
+        <div ng-repeat="startersRecipe in startersRecipes" class="panel panel-default">
 
-        <div id="post_date"> {{ startersRecipe.create_date }} </div>
+            <div class="recipe_title well well-sm">{{ startersRecipe.title}}</div>
 
-        <div> {{ startersRecipe.description }} </div>
+            <img ng-src="{{ startersRecipe.image }}" width="230" height="150"/>
 
-        <div id="read_recipe"><a href="#!/recipes/details/{{ startersRecipe._id }}">Read More.. </a></div>
+            <div id="post_date_recipe">Posted on &nbsp; {{ startersRecipe.create_date }} </div>
 
-</div>       
+            <div class="recipe_description"> {{ startersRecipe.description }} </div>
+
+            <div id="read_recipe"><a href="#!/recipes/details/{{ startersRecipe._id }}">Read More.. </a></div>
+
+    </div>   
+
+</div>    

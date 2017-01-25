@@ -780,17 +780,70 @@ footer{
 
 /* All recipes page*/
 
-.all_recipes_container{
+.container{
 
-    padding-top: 90px;
+    padding-top: 80px;
     margin: 0 auto;
     text-align: center;
-}
-.recipe_wrapper{
 
-    width: 80%;
-    background: #ccc;
-    margin: 0 auto;
+
+}
+
+.container_maincourse{
+
+    background-image: url(../images/maincourse.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.container_snacks{
+
+    background-image: url(../images/snacks.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.container_starters{
+
+    background-image: url(../images/starter.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.container_desserts{
+
+    background-image: url(../images/desserts.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.container_beverages{
+
+    background-image: url(../images/beverages.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.container_popular{
+
+    background-image: url(../images/popular.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.panel{
+
+    width: 90%;
+    background: #fff;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    margin: -20px auto 40px auto;
     
 }
 
@@ -798,6 +851,8 @@ footer{
     text-transform: uppercase;
     font-weight: bold;
     margin: 20px auto;
+    font-size: 20px;
+    color: #2f2b3f;
 }
 
 .recipe_description{
@@ -810,9 +865,17 @@ footer{
 
     text-decoration: none;
     background: #444;
-    padding: 5px;
+    padding: 5px 10px;
     border-radius: 3px;
     color: #fff;
-    padding-bottom: 30px auto;
 
+}
+
+#post_date_recipe{
+
+    margin: 20px auto;
+    width: 60%; 
+    text-align: center;
+    color: #696969;
+    font-style: italic;
 }
