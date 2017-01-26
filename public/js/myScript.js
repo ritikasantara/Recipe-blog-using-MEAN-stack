@@ -145,9 +145,27 @@ $(document).ready(function () {
 
 //     }
 
+
+    $(window).scroll(function (event) {
+    var scroll = $(window).scrollTop();
+    var one = $('.index_footer_padding').position().top + 1000;
+    var count = 0;
+    if (scroll > one) {
+        var newCount = count + 1;
+        if (newCount === 1) {
+            $('footer').css('bottom','0px');
+        };
+
         
+
+    };
     });
-//
+
+    
+    
+    
+});
+
 
 
 
