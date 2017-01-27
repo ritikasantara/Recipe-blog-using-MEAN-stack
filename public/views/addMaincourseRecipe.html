@@ -1,16 +1,42 @@
-           
-                    <h2> Post Maincourse Recipe </h2>
+<div  class="container col-sm-12 container_recipe_details">
+
+        <h2 class="well well-lg add_recipe_Well"> Post Maincourse Recipe </h2>
+        
+        <form class="form-horizontal" role="form" ng-submit="addMaincourseRecipe()">
+
+            <div class="form-group">
+
+                
+                <div class="col-sm-12"><input type="text" class="form-control" ng-model="maincourseRecipe.title" placeholder="  Title"></div>
+            
+            </div>
+
+            <div class="form-group">
                     
-                    <form enctype='multipart/formdata' ng-submit="addMaincourseRecipe()">	
+                
+                <div class="col-sm-12"><input type="text" class="form-control" value="Maincourse" ng-model="maincourseRecipe.category" placeholder="  Maincourse"></div>
 
-                        <label id="title_label">Title</label>
-                        <input type="text" ng-model="maincourseRecipe.title" placeholder="  Title">
-                        <label id="category_label">category</label>
-                        <input type="text"  value="Maincourse" ng-model="maincourseRecipe.category">
-                        <label id="image_label">Image</label>
-                        <input type="text" id="recipe_image" ng-model="maincourseRecipe.image">
-                        <textarea cols="100" rows="20" ng-model="maincourseRecipe.description"  placeholder="  Contents"></textarea>
-                        <button type="submit">POST RECIPE</button>
+            </div>
 
-                    </form>
-             
+            <div class="form-group">
+
+                
+                <div class="col-sm-12"><input type="text" class="form-control" id="recipe_image" ng-model="maincourseRecipe.image" placeholder="  Image"></div>
+
+            </div>
+
+            <div class="input-group">
+
+                <textarea class="form-control" col="10" rows="10" ng-model="maincourseRecipe.description"  placeholder="  Contents"></textarea>
+                <div class="col-sm-12">
+                
+                   <button type="submit" class="btn btn-primary col-sm-12 post_button">POST RECIPE</button>
+
+                </div>
+
+            </div>
+
+        </form>
+
+</div>  
+    

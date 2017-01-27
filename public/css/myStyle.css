@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html,body{
@@ -24,14 +25,14 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 /* navigation bar */
+/*
 
-
-nav{
+.navbar-inverse{
 
     position: fixed;
-    height: 50px;
+    height: 53px;
     width: 100%;
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0,0,0,.7);
     z-index: 99;
     font-size: 15px;
     clear: both;
@@ -42,35 +43,77 @@ nav{
 
 }
 
-nav li{
 
-    list-style-type: none;
-    float:left;
-    
+
+/*
+
+.icon-bar{
+
+    background: #fff;
 }
 
-nav a{
+
+
+.navbar-inverse li{
 
     text-decoration: none;
     color: #fff;
-    padding: 5px 10px;
-    border-radius: 2px;
-    margin-left: 30px;
-    line-height: 50px;
-}
-
-nav li a:hover{
+    background: #696969;
+ 
   
-  background-color: rgba(200,200,200,0.5);
-
 }
 
- .active_menuitem{
+.navbar-inverse li:hover{
+
+    color: orange;
+}*/
+
+.navbar-collapse{
+
+   
+        position: fixed;
+    height: 53px;
+    width: 100%;
+    background-color: rgba(0,0,0,.7);
+    z-index: 99;
+    font-size: 15px;
+    clear: both;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+
+.navbar-collapse li{
+
+    text-decoration: none;
+    color: #fff;
+    background: rgba(0,0,0,0.8);
+
+
   
-  background-color: rgba(200,200,200,0.5);
 
 }
 
+.navbar-collapse li:last-child{
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.navbar-collapse li:hover{
+  
+  background: orange;
+  color: #000;
+
+}
+
+ .active{
+  
+  background-color: rgba(#ccc,0.5);
+
+}
 
 /* search input box */
 
@@ -788,6 +831,16 @@ footer{
 
 }
 
+.container_recipe_details{
+
+    background-image: url(../images/maincourse.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+   
+
+}
+
 .container_maincourse{
 
     background-image: url(../images/maincourse.jpg);
@@ -878,3 +931,19 @@ footer{
     color: #696969;
     font-style: italic;
 }
+
+/* form */
+
+
+
+.form-horizontal{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.post_button{
+
+    margin: 30px auto;
+}
+

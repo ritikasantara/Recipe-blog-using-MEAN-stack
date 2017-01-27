@@ -1,16 +1,45 @@
-           
-                    <h2> Post Starters Recipe </h2>
+
+
+<div  class="container col-sm-12 container_recipe_details">
+
+        <h2 class="well well-lg"> Post Starters Recipe </h2>
+        
+        <form class="form-horizontal" role="form" ng-submit="addStartersRecipe()">
+
+            <div class="form-group">
+
+                
+                <div class="col-sm-12"><input type="text" class="form-control" ng-model="startersRecipe.title" placeholder="  Title"></div>
+            
+            </div>
+
+            <div class="form-group">
                     
-                    <form enctype='multipart/formdata' ng-submit="addStartersRecipe()">	
+                
+                <div class="col-sm-12"><input type="text" class="form-control" value="Starters" ng-model="startersRecipe.category" placeholder="  Maincourse"></div>
 
-                        <label id="title_label">Title</label>
-                        <input type="text" ng-model="startersRecipe.title" placeholder="  Title">
-                        <label id="category_label">category</label>
-                        <input type="text"  value="Maincourse" ng-model="startersRecipe.category">
-                        <label id="image_label">Image</label>
-                        <input type="text" id="recipe_image" ng-model="startersRecipe.image">
-                        <textarea cols="100" rows="20" ng-model="startersRecipe.description"  placeholder="  Contents"></textarea>
-                        <button type="submit">POST RECIPE</button>
+            </div>
 
-                    </form>
+            <div class="form-group">
+
+                
+                <div class="col-sm-12"><input type="text" class="form-control" id="recipe_image" ng-model="startersRecipe.image" placeholder="  Image"></div>
+
+            </div>
+
+            <div class="input-group">
+
+                <textarea class="form-control" col="10" rows="10" ng-model="startersRecipe.description"  placeholder="  Contents"></textarea>
+                <div class="col-sm-12">
+                
+                   <button type="submit" class="btn btn-primary col-sm-12 post_button">POST RECIPE</button>
+
+                </div>
+
+            </div>
+
+        </form>
+
+</div>  
+    
              

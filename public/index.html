@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="UTF-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=David+Libre" rel="stylesheet">
@@ -42,23 +42,52 @@
 
     <!-- navigation bar-->
 
-      <nav>
-         
-		 <ul>
+      <nav class="navbar navbar-inverse">
 
-			<li><a href ui-sref="home({scrollTo: 'home'})" class="active_menuitem home_btn">HOME</a></li>
-			<li><a href ui-sref="maincourse({scrollTo: 'maincourse'})" class="maincourse_btn">MAINCOURSE</a></li>
-			<li><a href ui-sref="snacks({scrollTo: 'snacks'})" class="snacks_btn">SNACKS</a></li>
-			<li><a href ui-sref="starters({scrollTo: 'starter'})" class="starter_btn">STARTERS</a></li>
-			<li><a href ui-sref="desserts({scrollTo: 'desserts'})" class="desserts_btn">DESSERTS</a></li>
-			<li><a href ui-sref="beverages({scrollTo: 'beverages'})" class="beverages_btn">BEVERAGES</a></li>
-			<li><a href ui-sref="popular({scrollTo: 'popular'})" class="popular_btn">POPULAR</a></li>
+		  	<!--<ul class="main_navbar_menu">
 
-		 </ul>
+				<li><a href ui-sref="home({scrollTo: 'home'})" class="active_menuitem home_btn">HOME</a></li>
+				<li><a href ui-sref="maincourse({scrollTo: 'maincourse'})" class="maincourse_btn">MAINCOURSE</a></li>
+				<li><a href ui-sref="snacks({scrollTo: 'snacks'})" class="snacks_btn">SNACKS</a></li>
+				<li><a href ui-sref="starters({scrollTo: 'starter'})" class="starter_btn">STARTERS</a></li>
+				<li><a href ui-sref="desserts({scrollTo: 'desserts'})" class="desserts_btn">DESSERTS</a></li>
+				<li><a href ui-sref="beverages({scrollTo: 'beverages'})" class="beverages_btn">BEVERAGES</a></li>
+				<li><a href ui-sref="popular({scrollTo: 'popular'})" class="popular_btn">POPULAR</a></li>
 
-		 <input type="text" placeholder="  Search recipes" id="search_input">
+		     </ul> 
+         -->
+		 <!-- hamburger menu -->
+		 <div class="navbar-header">
+
+			<button type"button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+
+			</button>
+		 </div>
+		 <div class="collapse navbar-collapse" id="myNavbar">
+
+			 <ul class="nav navbar-nav">
+
+				<li><a href ui-sref="home({scrollTo: 'home'})" class="active_menuitem home_btn">HOME</a></li>
+				<li><a href ui-sref="maincourse({scrollTo: 'maincourse'})" class="maincourse_btn">MAINCOURSE</a></li>
+				<li><a href ui-sref="snacks({scrollTo: 'snacks'})" class="snacks_btn">SNACKS</a></li>
+				<li><a href ui-sref="starters({scrollTo: 'starter'})" class="starter_btn">STARTERS</a></li>
+				<li><a href ui-sref="desserts({scrollTo: 'desserts'})" class="desserts_btn">DESSERTS</a></li>
+				<li><a href ui-sref="beverages({scrollTo: 'beverages'})" class="beverages_btn">BEVERAGES</a></li>
+				<li><a href ui-sref="popular({scrollTo: 'popular'})" class="popular_btn">POPULAR</a></li>
+
+		     </ul> 		 
+
+		 </div>
+
+
+
+		 <!--<input type="text" placeholder="  Search recipes" id="search_input">
 		 
-		 <i class="fa fa-search" aria-hidden="true" id="search"></i>
+		 <i class="fa fa-search" aria-hidden="true" id="search"></i>-->
 		 
 	
 

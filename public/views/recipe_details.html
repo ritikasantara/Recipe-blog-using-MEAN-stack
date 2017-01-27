@@ -1,14 +1,18 @@
-<div  ng-init="getRecipe()">
+<div  class="container col-md-12 container_recipe_details">
 
-    <div>{{ recipe.title }}</div>
+<div  ng-init="getRecipe()"  class="panel panel-default">
 
-    <img ng-src="{{ recipe.image }}" width="190" height="100"/>
+    <div class="recipe_title well well-sm">{{ recipe.title }}</div>
 
-    <div>{{ recipe.create_date }}</div>
+    <img ng-src="{{ recipe.image }}" width="230" height="150"/>
 
-    <div>{{ recipe.description }}</div>
+    <div id="post_date_recipe">{{ recipe.create_date }}</div>
+
+    <div class="recipe_description">{{ recipe.description }}</div>
 
     <a href="#!/recipes/edit/{{ recipe._id }}" class="edit_recipe">Edit Recipe</a>
     <div class="delete_recipe" ng-click="removeRecipe(recipe._id)">Delete Recipe</div>
+
+</div>
 
 </div>
