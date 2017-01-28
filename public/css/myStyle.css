@@ -579,7 +579,7 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 
-.post_article #title1_article{
+.post_article .title1_article{
 
     text-align: center;
     color: #051a2f;
@@ -589,7 +589,7 @@ h1, h2, h3, h4, h5, h6, p{
 
 }
 
-.post_article #article_date{
+.post_article .article_date{
 
     color: #696969;
     font-size: 15px;
@@ -599,7 +599,7 @@ h1, h2, h3, h4, h5, h6, p{
 
 }
 
-.post_article #title2_article{
+.post_article .title2_article{
     
     color: #696969;
     font-size: 29px;
@@ -624,7 +624,7 @@ h1, h2, h3, h4, h5, h6, p{
     
 }
 
-.post_article #content{
+.post_article .content{
 
     color: #05132f;
     font-size: 17px;
@@ -637,7 +637,7 @@ h1, h2, h3, h4, h5, h6, p{
     
 }
 
-.post_article #content #readmore_article a{
+.post_article .content #readmore_article a{
 
 
     width: 60px;
@@ -841,6 +841,14 @@ footer{
 
 }
 
+.container_article_details{
+
+    background-image: url(../images/ice-cream.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
 .container_maincourse{
 
     background-image: url(../images/maincourse.jpg);
@@ -947,3 +955,8 @@ footer{
     margin: 30px auto;
 }
 
+.input-group,.form-group{
+
+    margin: 30px auto;
+
+}

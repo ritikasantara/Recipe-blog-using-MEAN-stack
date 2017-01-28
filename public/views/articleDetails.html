@@ -1,14 +1,18 @@
-<div  ng-init="getArticle()">
+<div  class="container col-md-12 container_article_details">
 
-    <div>{{ article.title }}</div>
+    <div  ng-init="getArticle()" class="panel panel-default post_article">
 
-    <div>Posted on &nbsp;{{ article.create_date }}</div>
+        <div class="title1_article" well well-sm">{{ article.title }}</div>
 
-    <div>{{ article.subtitle }}</div>
+        <div class="article_date">Posted on &nbsp;{{ article.create_date }}</div>
 
-    <img ng-src="{{ article.image }}" width="190" height="100"/>
+        <div class="title2_article">{{ article.subtitle }}</div>
 
-    <div>{{ article.content }}</div>
+        <img ng-src="{{ article.image }}" width="250" height="200"/>
 
+        <div class="content">{{ article.content  }}</div>
+
+
+    </div>
 
 </div>
