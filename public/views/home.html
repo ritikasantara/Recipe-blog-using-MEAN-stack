@@ -10,6 +10,8 @@
 
 	  </section>
 
+	  <!-- Maincourse recipes -->
+
       <section class="sect two blur" id="maincourse">
 
 		  <p class="title">MAINCOURSE</p>
@@ -62,15 +64,17 @@
 
 				<p class="content">
 
-						{{ article.content | limitTo : 200}} <span id="readmore_article"><a href="#!/articles/details/{{ article._id }}"><em>Read More..</em> </a></span>
+						{{ article.content | limitTo : 300}} <span id="readmore_article"><a href="#!/articles/details/{{ article._id }}"><em>Read More..</em> </a></span>
 		
 		       </p>
 
-		</div>   
+		</div>
+
+		<div class="create_article"><a href="#!/articles/add">Add Article</a></div>
 
 	  </article	>  
 
-
+    <!-- Snacks recipes -->
 
       <section class="sect three blur" id="snacks">
 
@@ -106,7 +110,6 @@
 
 
 
-
 	<!-- Article -->
 
 	  <article class="post_article">
@@ -122,15 +125,19 @@
 
 				<img ng-src="{{ article.image }}" width="250" height="200"/>   
 
-				<p class="content">{{ article.content | limitTo : 200}} 
+				<p class="content">{{ article.content | limitTo : 300}} 
 					
 					<span id="readmore_article"><a href="#!/articles/details/{{ article._id }}"><em>Read More..</em></a></span>
 		
 		       </p>
 
-		 </div>	   
+		 </div>	 
+
+		 <div class="create_article"><a href="#!/articles/add">Add Article</a></div>  
 
 	  </article	> 
+
+	  <!-- Starters recipes -->
 
       <section class="sect four blur" id="starter">
 
@@ -179,15 +186,19 @@
 
 				<img ng-src="{{ article.image }}" width="250" height="200"/>   
 
-				<p class="content">{{ article.content | limitTo : 200 }} 
+				<p class="content">{{ article.content | limitTo : 300 }} 
 					
 					<span id="readmore_article"><a href="#!/articles/details/{{ article._id }}"><em>Read More..</em></a></span>
 		
 		       </p>
 
-		 </div>	   
+		 </div>	
+
+		 <div class="create_article"><a href="#!/articles/add">Add Article</a></div>   
 
 	  </article	> 
+
+	  <!-- Desserts recipes -->
 
 
       <section class="sect five blur" id="desserts">
@@ -239,7 +250,7 @@
 
 				<img ng-src="{{ article.image }}" width="250" height="200"/>   
 
-				<p class="content">{{ article.content| limitTo : 200 }} 
+				<p class="content">{{ article.content| limitTo : 300 }} 
 					
 					<span id="readmore_article"><a href="#!/articles/details/{{ article._id }}""><em>Read More..</em></a></span>
 		
@@ -247,9 +258,11 @@
 
 		 </div>	   
 
+		 <div class="create_article"><a href="#!/articles/add">Add Article</a></div>
+
 	  </article	> 	
 
-
+    <!-- Beverages recipes -->
 
 	  <section class="sect six blur" id="beverages">
 		  
@@ -300,15 +313,19 @@
 
 				<img ng-src="{{ article.image }}" width="250" height="200"/>   
 
-				<p class="content">{{ article.content }} 
+				<p class="content">{{ article.content | limitTo : 300 }} 
 					
 					<span id="readmore_article"><a href="#!/articles/details/{{ article._id }}"><em>Read More..</em></a></span>
 		
 		       </p>
 
-		 </div>	   
+		 </div>	 
 
-	  </article	> 	
+		 <div class="create_article"><a href="#!/articles/add">Add Article</a></div>  
+
+	  </article	> 
+
+	<!-- Popular recipes -->	
 
 	  <section class="sect seven blur" id="popular">
 

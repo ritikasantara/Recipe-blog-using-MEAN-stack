@@ -10,7 +10,9 @@
 
         <img ng-src="{{ article.image }}" width="250" height="200"/>
 
-        <div class="content">{{ article.content  }}</div>
+        <div class="content">{{ article.content }}</div>
+
+        <div class="article_edit"><span class="edit_article"><a href="#!/articles/edit/{{ article._id }}">Edit</a></span> | <span class="delete_article" ng-click="removeArticle(article._id)">Delete</span></div>
 
 
     </div>

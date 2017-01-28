@@ -12,6 +12,10 @@ html,body{
  
 }
 
+a{
+    text-decoration: none;
+}
+
 body{
 
     margin-bottom: 400px;
@@ -637,6 +641,27 @@ h1, h2, h3, h4, h5, h6, p{
     
 }
 
+ .create_article a{
+
+    text-decoration: none;
+    color: #1e90ff;
+    text-align: center;
+    display: block;
+    margin: 40px auto;
+    border: 1px solid #deb887;
+    border-radius: 2px;
+    padding: 5px 10px;
+    font-size: 15px;
+    width: 20%;
+
+ }
+
+.create_article:hover .create_article a{
+
+    color: #000;
+    text-decoration: none;
+}
+
 .post_article .content #readmore_article a{
 
 
@@ -654,6 +679,28 @@ h1, h2, h3, h4, h5, h6, p{
 
 
 }
+
+.article_edit, .article_edit a{
+
+    padding-top: 30px;
+    text-decoration: none;
+    color: #000;
+  
+    
+}
+
+.edit_article ,.delete_article{
+
+    padding: 5px;
+    
+}
+
+.edit_article a:hover, .delete_article:hover{
+
+    color: #1e90ff;
+    cursor: pointer;
+}
+
 
 /* The footer */
 

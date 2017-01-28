@@ -271,13 +271,57 @@ angular.module('recipeBlog')
 
 				$http.delete('/api/posts/' +id).then(function(response){
 
-					window.history.back();
+					window.location.href = '#!/';
 
 				})
 			}
 		
 		
 
+		// Adding an Article
+
+			$scope.addArticle = function(){
+
+				$http.post('/api/articles/', $scope.article).then(function(response){
+
+					window.history.back();
+
+				})
+
+			}
+
+
+		// Update Articles
+
+		
+			$scope.editArticle = function(){
+
+				var id = $stateParams.id;
+
+				$http.put('/api/articles/' +id, $scope.article).then(function(response){
+				
+					window.history.back();  
+					
+				}, 
+
+				function(error) {  
+					console.log("Error: " + error);  
+				}); 
+
+		
+			}
+		
+		// Delete Articles
+
+			$scope.removeArticle = function(id){
+
+				$http.delete('/api/articles/' +id).then(function(response){
+
+					window.history.back();
+
+				})
+			}
+		
 	
 
 	}]);

@@ -11,6 +11,13 @@ thisApp.config(function($stateProvider, $urlRouterProvider) {
 
         })
 
+        // .state('home', {
+        //     url: '/home',
+        //     controller: 'HomeController',
+        //     templateUrl: 'views/home.html'
+
+        // })
+
         .state('maincourse', {
             url: '/:scrollTo',  
             controller: 'HomeController', 
@@ -144,6 +151,14 @@ thisApp.config(function($stateProvider, $urlRouterProvider) {
             
         })
 
+        .state('add_articles', {
+            url: '/articles/add',     
+            controller: 'HomeController',
+            templateUrl: 'views/addArticles.html'
+
+            
+        })
+
 
         .state('edit_recipes', {
             url: '/recipes/edit/:id',     
@@ -151,7 +166,16 @@ thisApp.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: 'views/editRecipes.html'
 
             
+        })
+
+        .state('edit_articles', {
+            url: '/articles/edit/:id',     
+            controller: 'HomeController',
+            templateUrl: 'views/editArticles.html'
+
+            
         });
+
 
 
         
