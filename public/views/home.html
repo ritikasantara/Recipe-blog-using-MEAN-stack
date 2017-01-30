@@ -12,7 +12,7 @@
 
 	  <!-- Maincourse recipes -->
 
-      <section class="sect two blur" id="maincourse">
+      <section class="sect two" id="maincourse">
 
 		  <p class="title">MAINCOURSE</p>
 		  <a href="#!/recipes/maincourse" class="all_recipes_title">All Maincourse</a>
@@ -55,7 +55,7 @@
 
 				<p class="title1_article">{{ article.title }}</p>
 
-				<p class="article_date"><em>Posted on &nbsp;{{ article.create_date }}</em></p>
+				<p class="article_date">Posted on &nbsp;{{ article.create_date }}</p>
 
 
 				<p class="title2_article">{{ article.subtitle }}</p>
@@ -64,7 +64,7 @@
 
 				<p class="content">
 
-						{{ article.content | limitTo : 300}} <span id="readmore_article"><a href="#!/articles/details/{{ article._id }}"><em>Read More..</em> </a></span>
+						{{ article.content | limitTo : 350}} <span id="readmore_article"><a href="#!/articles/details/{{ article._id }}">Read More..</a></span>
 		
 		       </p>
 
@@ -76,14 +76,16 @@
 
     <!-- Snacks recipes -->
 
-      <section class="sect three blur" id="snacks">
+      <section class="sect three" id="snacks">
+
+		  <div class="blur">
 
 		  <p class="title">SNACKS</p>
 		  <a href="#!/recipes/snacks" class="all_recipes_title">All Snacks</a>
 
 	    <!-- Blog posts -->
 
-          		  <div class="blogs" ng-init="getSnacksRecipes()">
+          	<div class="blogs" ng-init="getSnacksRecipes()">
 
             
 
@@ -106,6 +108,8 @@
 
 			<a href="#!/snacks_recipes/add" class="create_recipe">Add Snacks Recipe</a> 
 
+			</div>
+
 	  </section>
 
 
@@ -118,16 +122,16 @@
 
 				<p class="title1_article">{{ article.title }}</p>
 
-				<p class="article_date"><em>Posted on &nbsp;{{ article.create_date }}</em></p>
+				<p class="article_date">Posted on &nbsp;{{ article.create_date }}</p>
 
 
 				<p class="title2_article">{{ article.subtitle }}</p>
 
 				<img ng-src="{{ article.image }}" width="250" height="200"/>   
 
-				<p class="content">{{ article.content | limitTo : 300}} 
+				<p class="content">{{ article.content | limitTo : 350}} 
 					
-					<span id="readmore_article"><a href="#!/articles/details/{{ article._id }}"><em>Read More..</em></a></span>
+					<span id="readmore_article"><a href="#!/articles/details/{{ article._id }}">Read More..</a></span>
 		
 		       </p>
 
@@ -139,7 +143,7 @@
 
 	  <!-- Starters recipes -->
 
-      <section class="sect four blur" id="starter">
+      <section class="sect four" id="starter">
 
 		  <p class="title">STARTER</p>
 		  <a href="#!/recipes/starters" class="all_recipes_title">All Starters</a>
@@ -179,16 +183,16 @@
 
 				<p class="title1_article">{{ article.title }}</p>
 
-				<p class="article_date"><em>Posted on &nbsp;{{ article.create_date }}</em></p>
+				<p class="article_date">Posted on &nbsp;{{ article.create_date }}</p>
 
 
 				<p class="title2_article">{{ article.subtitle }}</p>
 
 				<img ng-src="{{ article.image }}" width="250" height="200"/>   
 
-				<p class="content">{{ article.content | limitTo : 300 }} 
+				<p class="content">{{ article.content | limitTo : 350 }} 
 					
-					<span id="readmore_article"><a href="#!/articles/details/{{ article._id }}"><em>Read More..</em></a></span>
+					<span id="readmore_article"><a href="#!/articles/details/{{ article._id }}">Read More..</a></span>
 		
 		       </p>
 
@@ -201,7 +205,7 @@
 	  <!-- Desserts recipes -->
 
 
-      <section class="sect five blur" id="desserts">
+      <section class="sect five" id="desserts">
 		  
 		  <p class="title">DESSERTS</p>
 		  <a href="#!/recipes/desserts" class="all_recipes_title">All Desserts</a>
@@ -243,16 +247,16 @@
 
 				<p class="title1_article">{{ article.title }}</p>
 
-				<p class="article_date"><em>Posted on &nbsp;{{ article.create_date }}</em></p>
+				<p class="article_date">Posted on &nbsp;{{ article.create_date }}</p>
 
 
 				<p class="title2_article">{{ article.subtitle }}</p>
 
 				<img ng-src="{{ article.image }}" width="250" height="200"/>   
 
-				<p class="content">{{ article.content| limitTo : 300 }} 
+				<p class="content">{{ article.content| limitTo : 350 }} 
 					
-					<span id="readmore_article"><a href="#!/articles/details/{{ article._id }}""><em>Read More..</em></a></span>
+					<span id="readmore_article"><a href="#!/articles/details/{{ article._id }}"">Read More..</a></span>
 		
 		       </p>
 
@@ -264,7 +268,7 @@
 
     <!-- Beverages recipes -->
 
-	  <section class="sect six blur" id="beverages">
+	  <section class="sect six" id="beverages">
 		  
 		  <p class="title">BEVERAGES</p>
 		  <a href="#!/recipes/beverages" class="all_recipes_title">All Beverages</a>
@@ -300,22 +304,22 @@
 
 <!-- Article -->
 
-	  <article class="post_article height_adjust">
+	  <article class="post_article">
 
 		  <div ng-repeat="article in articles | limitTo : 1 : 4"> 
 
 				<p class="title1_article">{{ article.title }}</p>
 
-				<p class="article_date"><em>Posted on &nbsp;{{ article.create_date }}</em></p>
+				<p class="article_date">Posted on &nbsp;{{ article.create_date }}</p>
 
 
 				<p class="title2_article">{{ article.subtitle }}</p>
 
 				<img ng-src="{{ article.image }}" width="250" height="200"/>   
 
-				<p class="content">{{ article.content | limitTo : 300 }} 
+				<p class="content">{{ article.content | limitTo : 350 }} 
 					
-					<span id="readmore_article"><a href="#!/articles/details/{{ article._id }}"><em>Read More..</em></a></span>
+					<span id="readmore_article"><a href="#!/articles/details/{{ article._id }}">Read More..</a></span>
 		
 		       </p>
 
@@ -327,7 +331,7 @@
 
 	<!-- Popular recipes -->	
 
-	  <section class="sect seven blur" id="popular">
+	  <section class="sect seven" id="popular">
 
 		  <p class="title">POPULAR</p>
 		  <a href="#!/recipes/popular" class="all_recipes_title">All Popular</a>

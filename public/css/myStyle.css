@@ -72,10 +72,10 @@ h1, h2, h3, h4, h5, h6, p{
     color: orange;
 }*/
 
-.navbar-collapse{
+/*.navbar-collapse{
 
    
-        position: fixed;
+    position: fixed;
     height: 53px;
     width: 100%;
     background-color: rgba(0,0,0,.7);
@@ -116,6 +116,52 @@ h1, h2, h3, h4, h5, h6, p{
  .active{
   
   background-color: rgba(#ccc,0.5);
+
+}*/
+
+nav{
+
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    z-index: 99;
+    font-size: 15px;
+    clear: both;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+
+}
+
+nav li{
+
+    list-style-type: none;
+    float:left;
+    
+}
+
+nav a{
+
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 2px;
+    margin-left: 30px;
+    line-height: 50px;
+}
+
+nav li a:hover{
+  
+  background-color: rgba(200,200,200,0.5);
+  
+
+}
+
+ .active{
+  
+  background-color: rgba(200,206,200,0.5);
 
 }
 
@@ -422,17 +468,22 @@ h1, h2, h3, h4, h5, h6, p{
 
 }
 
+
+
 .two{
 
     background-image: url(../images/maincourse.jpg);
 
 }
 
+
 .three{
 
     background-image: url(../images/starter.jpg);
+ 
 
 }
+
 
 .four{
 
@@ -477,6 +528,8 @@ h1, h2, h3, h4, h5, h6, p{
     top: 210px;
 
 }
+
+
 
 
 .recipes{
@@ -551,34 +604,31 @@ h1, h2, h3, h4, h5, h6, p{
     
 }
 
-#readmore{
+#readmore a{
 
-    width: 60px;
-    height: 20px;
+    
     background-color: #ccc;
     opacity: 0.6;
     border-radius: 3px;
     padding: 5px;
-    font-size: 15px;
+    font-size: 13px;
+    font-family: 'Cardo', serif;
     position: absolute;
     bottom: 10px;
     right: 10px;
-
-
-}
-
-#readmore a{
-
     text-decoration: none;
     color: #051a2f;
+   
 
 }
+
+
 
 /* Articles */
 
 .post_article{
 
-    height: 620px;
+    height: 670px;
 
 }
 
@@ -613,11 +663,7 @@ h1, h2, h3, h4, h5, h6, p{
 
 }
 
-.height_adjust{
 
-    height: 500px;
-
-}
 
 .post_article img{
 
@@ -634,7 +680,7 @@ h1, h2, h3, h4, h5, h6, p{
     font-size: 17px;
     font-family: 'Open Sans Condensed', sans-serif;
     line-height: 30px;
-    max-width: 1100px;
+    max-width: 80%;
     margin: 0 auto;
   
   
@@ -665,8 +711,7 @@ h1, h2, h3, h4, h5, h6, p{
 .post_article .content #readmore_article a{
 
 
-    width: 60px;
-    height: 20px;
+   
     background-color: #ccc;
     opacity: 0.6;
     border-radius: 3px;
