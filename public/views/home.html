@@ -14,36 +14,39 @@
 
       <section class="sect two" id="maincourse">
 
+		 
+
 		  <p class="title">MAINCOURSE</p>
 		  <a href="#!/recipes/maincourse" class="all_recipes_title">All Maincourse</a>
 
         <!-- Blog posts -->
 
-
+		
 		  <div class="blogs" ng-init="getMaincourseRecipes()">
 
-            
-
+			 
 			  <div class="recipes" ng-repeat="maincourseRecipe in maincourseRecipes | limitTo: 4">
                   
                    <p id="recipe_title">{{ maincourseRecipe.title }}</p>
 
 				   <img ng-src="{{ maincourseRecipe.image }}" width="190" height="100"/>
 
-				   <div id="post_date"> {{ maincourseRecipe.create_date }} </div>
+				   <div id="post_date">Posted on <br/> {{ maincourseRecipe.create_date }} </div>
 
-				   <div> {{ maincourseRecipe.description }} </div>
+				   <div class="recipe_description"> {{ maincourseRecipe.description }} </div>
 
 				  <div id="readmore"><a href="#!/recipes/details/{{ maincourseRecipe._id }}">Read More.. </a></div>
                    
 
 			  </div>
+		
 
-		</div>	  
+		</div>
 			  
-        <a href="#!/maincourse_recipes/add" class="create_recipe">Add Maincourse Recipe</a>
+			  
+        <!--<a href="#!/maincourse_recipes/add" class="create_recipe">Add Maincourse Recipe</a>-->
 			 
-
+	
 	  </section>
 
 
@@ -95,9 +98,9 @@
 
 				   <img ng-src="{{ snacksRecipe.image }}" width="190" height="100"/>
 
-				   <div id="post_date"> {{ snacksRecipe.create_date }} </div>
+				   <div id="post_date">Posted on <br/>{{ snacksRecipe.create_date }} </div>
 
-				   <div> {{ snacksRecipe.description }} </div>
+				   <div class="recipe_description"> {{ snacksRecipe.description }} </div>
 
 				  <div id="readmore"><a href="#!/recipes/details/{{ snacksRecipe._id }}">Read More.. </a></div>
                    
@@ -160,9 +163,9 @@
 
 				   <img ng-src="{{ startersRecipe.image }}" width="190" height="100"/>
 
-				   <div id="post_date"> {{ startersRecipe.create_date }} </div>
+				   <div id="post_date">Posted on <br/> {{ startersRecipe.create_date }} </div>
 
-				   <div> {{ startersRecipe.description }} </div>
+				   <div class="recipe_description"> {{ startersRecipe.description }} </div>
 
 				  <div id="readmore"><a href="#!/recipes/details/{{ startersRecipe._id }}">Read More.. </a></div>
                    
@@ -223,9 +226,9 @@
 
 				   <img ng-src="{{ dessertsRecipe.image }}" width="190" height="100"/>
 
-				   <div id="post_date"> {{ dessertsRecipe.create_date }} </div>
+				   <div id="post_date">Posted on <br/> {{ dessertsRecipe.create_date }} </div>
 
-				   <div> {{ dessertsRecipe.description }} </div>
+				   <div class="recipe_description"> {{ dessertsRecipe.description }} </div>
 
 				  <div id="readmore"><a href="#!/recipes/details/{{ dessertsRecipe._id }}">Read More.. </a></div>
                    
@@ -286,9 +289,9 @@
 
 				   <img ng-src="{{ beveragesRecipe.image }}" width="190" height="100"/>
 
-				   <div id="post_date"> {{ beveragesRecipe.create_date }} </div>
+				   <div id="post_date">Posted on <br/> {{ beveragesRecipe.create_date }} </div>
 
-				   <div> {{ beveragesRecipe.description }} </div>
+				   <div class="recipe_description"> {{ beveragesRecipe.description }} </div>
 
 				  <div id="readmore"><a href="#!/recipes/details/{{ beveragesRecipe._id }}">Read More.. </a></div>
                    
@@ -349,9 +352,9 @@
 
 				   <img ng-src="{{ popularRecipe.image }}" width="190" height="100"/>
 
-				   <div id="post_date"> {{ popularRecipe.create_date }} </div>
+				   <div id="post_date">Posted on <br/> {{ popularRecipe.create_date }} </div>
 
-				   <div> {{ popularRecipe.description }} </div>
+				   <div class="recipe_description"> {{ popularRecipe.description }} </div>
 
 				  <div id="readmore"><a href="#!/recipes/details/{{ popularRecipe._id }}">Read More.. </a></div>
                    

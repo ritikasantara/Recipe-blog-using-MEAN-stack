@@ -119,12 +119,24 @@ h1, h2, h3, h4, h5, h6, p{
 
 }*/
 
+/*.home_btn{
+
+    margin-left: 64px;
+}*/
+
+.nav_wrapper{
+
+    margin-left: 3%;
+   
+}
+
 nav{
 
     position: fixed;
     height: 50px;
     width: 100%;
     background-color: rgba(0,0,0,.5);
+     font-family: 'Titillium Web', sans-serif;
     z-index: 99;
     font-size: 15px;
     clear: both;
@@ -207,6 +219,7 @@ nav li a:hover{
 
     font-size: 70px;
     border: 9px solid rgba(200,200,200,0.6);
+     font-family: 'Titillium Web', sans-serif;
     padding: 20px 30px;
     position: absolute;
     right: 15%;
@@ -284,14 +297,25 @@ nav li a:hover{
     
 }
 
+@media screen and (max-width: 600px){
+
+    .sect .one{
+
+        height: 500px;
+        background-size: 100% 10%;
+        background-attachment: local;
+    }
+}
+
 
 
 .title{
 
     position: absolute;
     top: 80px;
-    left: 10%;
+    left: 6%;
     font-size: 22px;
+    font-family: 'Titillium Web', sans-serif;
     font-weight: bold;
     border: 3px solid rgba(105,105,105,0.7);
     border-radius: 3px;
@@ -300,18 +324,51 @@ nav li a:hover{
 
 }
 
+@media screen and (max-width: 600px){
+
+
+    .title{
+
+        font-size: 18px;
+        left: 10%;
+    }
+}
+
 .all_recipes_title{
 
     position: absolute;
     top: 80px;
     right: 10%;
     color: #696969;
+     font-family: 'Titillium Web', sans-serif;
     cursor: pointer;
     font-size: 18px;
     border-bottom: 1px solid #696969;
     text-decoration: none;
     
+}
 
+@media screen and (max-width: 787px){
+
+
+    .all_recipes_title{
+
+        font-size: 17px;
+        top: 87px;
+       
+    }
+}
+
+
+@media screen and (max-width: 489px){
+
+
+    .all_recipes_title{
+
+        font-size: 15px;
+        top: 93px;
+       
+    }
 }
 
 
@@ -523,11 +580,12 @@ nav li a:hover{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-right: -30px;
     position: relative;
-    top: 210px;
+    top: 200px;
 
 }
+
+
 
 
 
@@ -549,11 +607,12 @@ nav li a:hover{
 
 
 #post_date{
-   
-   font-family: 'Open Sans Condensed', sans-serif;
-   margin-left: 20px;
-   font-size: 18px;
-   color: #051a2f;
+
+   font-family: 'Cardo', serif;
+   text-align: center;
+   margin-bottom: 20px;
+   font-size: 15px;
+   color: #696969;
 
 }
 
@@ -582,10 +641,10 @@ nav li a:hover{
 
 
 
-.recipes div{
+.recipes .recipe_description{
 
     font-family: 'Open Sans Condensed', sans-serif;
-    margin-left: 20px;
+    margin: 0 auto;
     clear: both;
     font-size: 18px;
     color: #051a2f;
@@ -602,6 +661,52 @@ nav li a:hover{
     margin-top: 20px;
    
     
+}
+
+@media screen and (max-width: 1300px){
+
+    .two, .three, .four, .five, .six, .seven{
+
+        overflow-y: scroll;
+
+    }
+
+    .blogs{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      
+        
+    }
+
+    .recipes{
+
+       width: 80%;
+       margin: 30px auto;
+    
+    }
+
+    .recipes img{
+
+        display: block;
+        margin: 0 auto;
+        
+    }
+
+    #post_date{
+
+        text-align: center;
+        margin: 20px auto;
+      
+    }
+
+    .recipe_description{
+
+        text-align: center;
+        margin: 0 20%;
+    }
 }
 
 #readmore a{
@@ -632,6 +737,15 @@ nav li a:hover{
 
 }
 
+@media screen and (max-width: 486px){
+
+
+    .post_article{
+
+        height: 800px;
+    }
+}
+
 
 .post_article .title1_article{
 
@@ -640,6 +754,7 @@ nav li a:hover{
     font-size: 23px;
     font-family: 'Gentium Basic', serif;
     margin-top: 50px;
+    width: 90%;
 
 }
 
@@ -660,7 +775,17 @@ nav li a:hover{
     text-align: center;
     font-family: 'Italianno', cursive;
     margin-top: 0px;
+    width: 90%;
 
+}
+
+@media screen and (max-width: 800px){
+
+    .post_article .title2_article{
+
+       font-size: 23px;
+
+    }
 }
 
 
@@ -700,6 +825,14 @@ nav li a:hover{
     font-size: 15px;
     width: 20%;
 
+ }
+
+ @media screen and (max-width: 486px){
+
+     .create_article a{
+
+         width: 60%;
+     }
  }
 
 .create_article:hover .create_article a{

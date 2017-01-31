@@ -12,10 +12,11 @@
     <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cardo" rel="stylesheet">
 
-	<link rel = "stylesheet" type = "text/css" href = "bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+	
 	<link rel = "stylesheet" type = "text/css" href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
 	
 	<link rel = "stylesheet" type = "text/css" href = "css/myStyle.css"/>
+	<link rel = "stylesheet" type = "text/css" href = "bower_components/bootstrap/dist/css/bootstrap.min.css"/>
 	
 	<link rel="shortcut icon" href="">
 
@@ -42,7 +43,10 @@
 
     <!-- navigation bar-->
 
+	
       <nav>
+
+		  <div class="nav_wrapper">
 
 		  	<!--<ul class="main_navbar_menu">
 
@@ -71,7 +75,7 @@
 
 			 <ul class="nav navbar-nav">
 
-				<li><a href ui-sref="home({scrollTo: 'home'})" class="active_menuitem home_btn">HOME</a></li>
+				<li><a href ui-sref="home({scrollTo: 'home'})" class="home_btn">HOME</a></li>
 				<li><a href ui-sref="maincourse({scrollTo: 'maincourse'})" class="maincourse_btn">MAINCOURSE</a></li>
 				<li><a href ui-sref="snacks({scrollTo: 'snacks'})" class="snacks_btn">SNACKS</a></li>
 				<li><a href ui-sref="starters({scrollTo: 'starter'})" class="starter_btn">STARTERS</a></li>
@@ -89,9 +93,14 @@
 		 
 		 <i class="fa fa-search" aria-hidden="true" id="search"></i>-->
 		 
-	
+		 </div>
 
       </nav>
+
+	  
+
+	
+
 
 	<!-- view -->
 	<div ui-view></div>
@@ -139,6 +148,8 @@
 
 		</div> 
       </footer>
+
+
 
 	  
 	
