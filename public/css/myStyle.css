@@ -136,9 +136,9 @@ nav{
     height: 50px;
     width: 100%;
     background-color: rgba(0,0,0,.5);
-     font-family: 'Titillium Web', sans-serif;
+    font-family: 'David Libre', serif;
     z-index: 99;
-    font-size: 15px;
+    font-size: 18px;
     clear: both;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -312,7 +312,7 @@ nav li a:hover{
 .title{
 
     position: absolute;
-    top: 80px;
+    top: 65px;
     left: 6%;
     font-size: 22px;
     font-family: 'Titillium Web', sans-serif;
@@ -340,7 +340,7 @@ nav li a:hover{
     top: 80px;
     right: 10%;
     color: #696969;
-     font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     cursor: pointer;
     font-size: 18px;
     border-bottom: 1px solid #696969;
@@ -375,7 +375,7 @@ nav li a:hover{
 
 /* Forms */
 
-.forms{
+/*.forms{
 
     background: #f0fff0;
     width: 100%;
@@ -402,20 +402,7 @@ nav li a:hover{
 
 }
 
-.create_recipe{
 
-    position: absolute;
-    top: 400px;
-    right: 0;
-    color: #ccc;
-    background: rgba(0,0,0,0.8);
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    padding: 10px 20px;
-    cursor: pointer;
-    text-decoration: none;
-    
-}
 
 .edit_recipe{
 
@@ -510,7 +497,7 @@ nav li a:hover{
 }
 
 
-
+*/
 
 
 /*sections*/
@@ -581,7 +568,7 @@ nav li a:hover{
     align-items: center;
     flex-wrap: wrap;
     position: relative;
-    top: 200px;
+    top: 160px;
 
 }
 
@@ -593,7 +580,7 @@ nav li a:hover{
 .recipes{
 
    width: 20%;
-   height: 400px;
+   height: 410px;
    background-color: #fff;
    border-radius: 3px;
    float: left;
@@ -610,7 +597,7 @@ nav li a:hover{
 
    font-family: 'Cardo', serif;
    text-align: center;
-   margin-bottom: 20px;
+   margin-bottom: 10px;
    font-size: 15px;
    color: #696969;
 
@@ -643,10 +630,12 @@ nav li a:hover{
 
 .recipes .recipe_description{
 
-    font-family: 'Open Sans Condensed', sans-serif;
+    /*font-family: 'Open Sans Condensed', sans-serif;*/
+    color: #39393C;
+    font-family: 'David Libre', serif;
     margin: 0 auto;
     clear: both;
-    font-size: 18px;
+    font-size: 15px;
     color: #051a2f;
     
     
@@ -709,6 +698,31 @@ nav li a:hover{
     }
 }
 
+ .create_recipe a{
+
+    text-decoration: none;
+    color: #fff;
+    background: #322c4f;
+    font-family: 'David Libre', serif;
+    text-align: center;
+    display: block;
+    margin: 60px auto;
+    border-radius: 2px;
+    padding: 5px 10px;
+    font-size: 15px;
+    width: 20%;
+    position: relative;
+    top: 170px;
+
+ }
+
+ .create_recipe a:hover{
+
+     cursor: pointer;
+     color: #fff;
+     text-decoration: none;
+ }
+
 #readmore a{
 
     
@@ -753,7 +767,7 @@ nav li a:hover{
     color: #051a2f;
     font-size: 23px;
     font-family: 'Gentium Basic', serif;
-    margin-top: 50px;
+    margin: 50px auto 20px auto;
     width: 90%;
 
 }
@@ -764,7 +778,7 @@ nav li a:hover{
     font-size: 15px;
     text-align: center;
     font-family: 'Gentium Basic', serif;
-    margin-top: 10px;
+    margin-top: 10px auto 0 auto;
 
 }
 
@@ -774,7 +788,7 @@ nav li a:hover{
     font-size: 29px;
     text-align: center;
     font-family: 'Italianno', cursive;
-    margin-top: 0px;
+    margin: 20px auto;
     width: 90%;
 
 }
@@ -803,10 +817,12 @@ nav li a:hover{
 
     color: #05132f;
     font-size: 17px;
-    font-family: 'Open Sans Condensed', sans-serif;
+    /*font-family: 'Open Sans Condensed', sans-serif;*/
+    color: #39393C;
+    font-family: 'David Libre', serif;
     line-height: 30px;
     max-width: 80%;
-    margin: 0 auto;
+    margin: 30px auto;
   
   
     
@@ -826,6 +842,15 @@ nav li a:hover{
     width: 20%;
 
  }
+
+
+ .create_article a:hover{
+
+     color: #000;
+     cursor: pointer;
+     text-decoration: none;
+ }
+
 
  @media screen and (max-width: 486px){
 
