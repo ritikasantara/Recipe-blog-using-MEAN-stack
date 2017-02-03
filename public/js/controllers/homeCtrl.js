@@ -13,7 +13,8 @@ angular.module('recipeBlog')
 
 				$http.get('/api/posts/category/Maincourse').then(function(response){
 				
-					$scope.maincourseRecipes = response.data;  
+					$scope.maincourseRecipes = response.data; 
+		
 				
 				}, 
 

@@ -44,12 +44,8 @@ h1, h2, h3, h4, h5, h6, p{
     width: 100%;
     background-color: rgba(0,0,0,.9);
     opacity: 0.9;
-    font-family: 'David Libre', serif;
-    /*z-index: 99;*/
     font-size: 16px;
     border: none;
-
-
 
 }
 
@@ -101,47 +97,10 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 
-
 .icon-bar{
 
-    background: burlywood;
+    background: #deb887;
 }
-
-/* search input box */
-
-#search_input{
-
-    background-color: transparent;
-    padding: 10px 15px;
-    height: 20px;
-    width: 160px;
-    color: #ccc;
-    float: right;
-    margin-top: 4px;
-    margin-right: 40px;
-    border-radius: 50px;
-    border: 1px solid #fbfaa5;
-
-}
-
-
-
-#search_input:focus {
-
-  outline: none;
-
-}
-
-
-#search{
-
-    position: absolute;
-    right: 60px;
-    color: #ccc;
-    margin-top: 15px;
-
-}
-
 
 /* site name */
 
@@ -184,12 +143,7 @@ h1, h2, h3, h4, h5, h6, p{
 
     #sitename{
 
-        font-size: 50px;
-        border: 9px solid rgba(200,200,200,0.6);
-        font-family: 'Titillium Web', sans-serif;
-        padding: 20px 30px;
-        position: absolute;
-        
+        font-size: 50px;   
         text-align: center;
         top: 35%;
         color: rgba(200,200,200,0.8);
@@ -204,10 +158,6 @@ h1, h2, h3, h4, h5, h6, p{
     #sitename{
 
         font-size: 40px;
-        border: 9px solid rgba(200,200,200,0.6);
-        font-family: 'Titillium Web', sans-serif;
-        padding: 20px 30px;
-        position: absolute;
         left: 13%;
         text-align: center;
         top: 30%;
@@ -223,10 +173,6 @@ h1, h2, h3, h4, h5, h6, p{
     #sitename{
 
         font-size: 40px;
-        border: 9px solid rgba(200,200,200,0.6);
-        font-family: 'Titillium Web', sans-serif;
-        padding: 20px 30px;
-        position: absolute;
         left: 12%;
         text-align: center;
         top: 35%;
@@ -243,10 +189,6 @@ h1, h2, h3, h4, h5, h6, p{
     #sitename{
 
         font-size: 40px;
-        border: 9px solid rgba(200,200,200,0.6);
-        font-family: 'Titillium Web', sans-serif;
-        padding: 20px 30px;
-        position: absolute;
         left: 14%;
         text-align: center;
         top: 30%;
@@ -262,10 +204,6 @@ h1, h2, h3, h4, h5, h6, p{
     #sitename{
 
         font-size: 40px;
-        border: 9px solid rgba(200,200,200,0.6);
-        font-family: 'Titillium Web', sans-serif;
-        padding: 20px 30px;
-        position: absolute;
         left: 12%;
         text-align: center;
         top: 30%;
@@ -275,9 +213,6 @@ h1, h2, h3, h4, h5, h6, p{
 
     }
 }
-
-
-
 
 
 /* sections */
@@ -374,6 +309,17 @@ h1, h2, h3, h4, h5, h6, p{
     }
 }
 
+@media screen and (max-width: 380px){
+
+
+    .all_recipes_title{
+
+        font-size: 8px;
+      
+       
+    }
+}
+
 
 
 
@@ -452,10 +398,6 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 
-
-
-
-
 .recipes{
 
    width: 20%;
@@ -509,9 +451,7 @@ h1, h2, h3, h4, h5, h6, p{
 
 .recipes .recipe_description{
 
-    /*font-family: 'Open Sans Condensed', sans-serif;*/
     color: #39393C;
-    font-family: 'David Libre', serif;
     margin: 0 auto;
     clear: both;
     font-size: 15px;
@@ -589,7 +529,6 @@ h1, h2, h3, h4, h5, h6, p{
     text-decoration: none;
     color: #fff;
     background: #322c4f;
-    font-family: 'David Libre', serif;
     text-align: center;
     display: block;
     margin: 60px auto;
@@ -626,7 +565,6 @@ h1, h2, h3, h4, h5, h6, p{
     border-radius: 3px;
     padding: 5px;
     font-size: 13px;
-    font-family: 'Cardo', serif;
     position: absolute;
     bottom: 10px;
     right: 10px;
@@ -640,20 +578,6 @@ h1, h2, h3, h4, h5, h6, p{
 
 /* Articles */
 
-.post_article{
-
-    height: 670px;
-
-}
-
-@media screen and (max-width: 486px){
-
-
-    .post_article{
-
-        height: 800px;
-    }
-}
 
 
 .post_article .title1_article{
@@ -661,7 +585,6 @@ h1, h2, h3, h4, h5, h6, p{
     text-align: center;
     color: #051a2f;
     font-size: 23px;
-    font-family: 'Gentium Basic', serif;
     margin: 50px auto 20px auto;
     width: 90%;
 
@@ -672,7 +595,6 @@ h1, h2, h3, h4, h5, h6, p{
     color: #696969;
     font-size: 15px;
     text-align: center;
-    font-family: 'Gentium Basic', serif;
     margin-top: 10px auto 0 auto;
 
 }
@@ -712,9 +634,7 @@ h1, h2, h3, h4, h5, h6, p{
 
     color: #05132f;
     font-size: 17px;
-    /*font-family: 'Open Sans Condensed', sans-serif;*/
     color: #39393C;
-    font-family: 'David Libre', serif;
     line-height: 30px;
     max-width: 80%;
     margin: 30px auto;
@@ -770,7 +690,6 @@ h1, h2, h3, h4, h5, h6, p{
     border-radius: 3px;
     padding: 5px;
     font-size: 14px;
-    font-family: 'Cardo', serif;
     text-decoration: none;
     color:#051a2f;
     margin-left: 20px;
@@ -837,7 +756,6 @@ footer:before{
 
     max-width: 100%;
     margin: 0 auto;
-    font-family: 'David Libre', serif;
     padding-top: 30px;
     position: relative;
     display: flex;
@@ -846,10 +764,6 @@ footer:before{
     align-items: center;
    
 }
-
-
-
-
 
 .col-1{
 
@@ -889,8 +803,6 @@ footer:before{
 
 }
 
-
-
 .col-icons a{
 
     text-decoration: none;
@@ -927,7 +839,6 @@ footer:before{
     font-size: 14px;
     padding: 5px 10px;
     border-radius: 2px;
-    font-family: 'David Libre', serif; 
     cursor: pointer;
     border: none;
     position: relative;
@@ -935,9 +846,6 @@ footer:before{
     margin-bottom: 30px;
 
 }
-
-
-
 
 
 .bottom span{
@@ -948,8 +856,6 @@ footer:before{
    color: #fff;
 
 }
-
-
 
 
 @media screen and (max-width: 844px){
@@ -1064,24 +970,21 @@ footer:before{
 
 @media screen and (max-width: 320px){
 
-   .col-2{
+    .col-2{
 
-    font-size: 16px;
-    position: relative;
-    left: 3%;
- 
+        font-size: 16px;
+        position: relative;
+        left: 3%;
+    
 
-  } 
+    } 
 
 
-  .col-1{
+    .col-1{
 
-      left: -10%;
-  }
+        left: -10%;
+    }
 }
-
-
-
 
 
 
@@ -1204,29 +1107,17 @@ footer:before{
 
 }
 
-.add_recipe_well{
-
-    font-family: 'David Libre', serif; 
-    color: #051a2f;
-}
-
 .recipe_ingredients_recipe_details{
 
     position: relative;
     left: -20%;
 }
 
-.post_button{
-
-    font-family: 'David Libre', serif; 
-    
-}
 
 /* form */
 
-
-
 .form-horizontal{
+
     display: block;
     width: 50%;
     margin: 0 auto;
