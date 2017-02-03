@@ -8,7 +8,7 @@
 html,body{
 
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'David Libre', serif;
  
 }
 
@@ -844,13 +844,27 @@ h1, h2, h3, h4, h5, h6, p{
 
 footer{
    
-    background-image: url(../images/footer_wood.jpg);
+    
     color: #fff;
     width: 100%;
-
     position: relative;
     bottom: 0px;
+    background: rgba(0,0,0,0.9);
+    background-size: cover;
    
+}
+
+footer:before{
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/footer_wood1.jpg);
+    opacity: 0.9;
+
 }
 
 
@@ -859,30 +873,19 @@ footer{
 
     max-width: 100%;
     margin: 0 auto;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'David Libre', serif;
     padding-top: 30px;
     position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
    
 }
 
 
 
-.first-column-segment{
 
-    max-width: 100%;
-    margin: 0 auto;
-    font-family: 'Titillium Web', sans-serif;
-    padding-top: 30px;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-   
-}
 
 .col-1{
 
@@ -915,29 +918,34 @@ footer{
 
 .col-2{
 
-   
     font-size: 20px;
     position: relative;
     top: 20px;
-  
     
 
 }
 
 
-.icons{
+
+/*.col-2-sub{
+
+    font-size: 15px;
+}*/
+
+
+/*.icons{
 
    position: relative;
    top: 20px;
  
-}
+}*/
 
 
 
 
-.col-icons{
+.fa_icon{
 
-
+    margin-right: 30px;
   
 }
 
@@ -946,6 +954,8 @@ footer{
     text-decoration: none;
     color: #fff;
     font-size: 20px;
+    margin-right: 10px;
+
 }
 
 .col-icons a:hover{
@@ -958,11 +968,13 @@ footer{
     background-color: transparent;
     border: 1px solid #fff;
     padding: 5px 15px;
-    height: 40px;
-    width: 90%;
+    height: 30px;
+    width: 80%;
     color: #ccc;
     border-radius: 3px;
     margin-top: 20px;
+    font-size: 13px;
+    margin-bottom: 30px;
 
 }
 
@@ -970,10 +982,15 @@ footer{
 
     background-color: royalblue;
     color: #fff;
+    font-size: 14px;
     padding: 5px 10px;
     border-radius: 2px;
+    font-family: 'David Libre', serif; 
     cursor: pointer;
     border: none;
+    position: relative;
+    top: 1px;
+    margin-bottom: 30px;
 
 }
 
@@ -983,11 +1000,12 @@ footer{
 
 }
 
-.bottom{
+/*.bottom{
 
     position: relative;
     top: 30px;
-}
+
+}*/
 
 
 .bottom span{
@@ -995,7 +1013,6 @@ footer{
    margin-left: calc(50% - 5em);
    font-size: 12px;
    display: inline-block;
-
 
 }
 
@@ -1012,6 +1029,135 @@ footer{
     color: #ccc;
 
 }
+
+@media screen and (max-width: 844px){
+
+    .padd{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .col-1{
+
+    
+        position: relative;
+        top: 20px;
+        left: -20%;
+        margin-bottom: 30px;
+    
+    }
+
+}
+
+@media screen and (max-width: 820px){
+
+   .col-2{
+
+    font-size: 19.5px;
+    position: relative;
+    top: 20px;
+    
+
+  } 
+}
+
+@media screen and (max-width: 537px){
+
+   .col-2{
+
+    font-size: 18px;
+    position: relative;
+    top: 20px;
+    
+
+  } 
+}
+
+@media screen and (max-width: 414px){
+
+   .col-2{
+
+    font-size: 16px;
+    position: relative;
+    top: 20px;
+    
+
+  } 
+}
+
+@media screen and (max-width: 399px){
+
+   .col-2{
+
+    font-size: 17px;
+    position: relative;
+    top: 20px;
+    left: 1%;
+    
+  } 
+
+    #newsletter_input{
+
+        font-size: 10px;
+        width: 60%;
+    }
+
+
+    #submit_input{
+
+        background-color: royalblue;
+        color: #fff;
+        font-size: 12px;
+        padding: 5px 10px;
+        border-radius: 2px;
+        cursor: pointer;
+        border: none;
+        margin-bottom: 30px;
+
+    }
+
+}
+
+
+@media screen and (max-width: 375px){
+
+   .col-2{
+
+    font-size: 16px;
+    position: relative;
+    left: 3%;
+ 
+
+  } 
+
+
+  .col-1{
+
+      left: -16%;
+  }
+}
+
+@media screen and (max-width: 320px){
+
+   .col-2{
+
+    font-size: 16px;
+    position: relative;
+    left: 3%;
+ 
+
+  } 
+
+
+  .col-1{
+
+      left: -10%;
+  }
+}
+
 
 
 
@@ -1031,8 +1177,7 @@ footer{
     background-image: url(../images/maincourse.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-  
-   
+
 
 }
 
@@ -1133,6 +1278,18 @@ footer{
     text-align: center;
     color: #696969;
     font-style: italic;
+}
+
+.add_recipe_well{
+
+    font-family: 'David Libre', serif; 
+    color: #051a2f;
+}
+
+.post_button{
+
+    font-family: 'David Libre', serif; 
+    
 }
 
 /* form */
