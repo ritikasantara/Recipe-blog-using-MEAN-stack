@@ -14,13 +14,9 @@ html,body{
 
 a{
     text-decoration: none;
+    color: inherit;
 }
 
-body{
-
-    margin-bottom: 400px;
-    
-}
 
 h1, h2, h3, h4, h5, h6, p{
 
@@ -280,49 +276,6 @@ h1, h2, h3, h4, h5, h6, p{
     }
 }
 
-/* Login and Sign up buttons */
-
-.auth_button{
-
-    display: inline-block;
-    padding: 10px 30px;
-    background-color: #633993;
-    color: #ccc;
-    font-family: 'Open sans', sans-serif;
-    position: absolute;
-    top: 100px;
-    border: 1px solid #4b0082;
-    border-radius: 3px;
-    cursor: pointer;
-
-}
-
-.signup_button{
-
-    padding: 10px 25px;
-    right: 19%;
-
-}
-
-.login_button{
-
-    right: 29%;
-}
-
-.add_recipe{
-
-    display: inline-block;
-    padding: 10px 30px;
-    background-color: #633993;
-    color: #ccc;
-    font-family: 'Open sans', sans-serif;
-    position: absolute;
-    top: 450px;
-    right: 300px;
-    border: 1px solid #4b0082;
-    border-radius: 3px;
-    cursor: pointer; 
-}
 
 
 
@@ -384,7 +337,7 @@ h1, h2, h3, h4, h5, h6, p{
     }
 }
 
-.all_recipes_title{
+.all_recipes_title a{
 
     position: absolute;
     top: 80px;
@@ -619,9 +572,16 @@ h1, h2, h3, h4, h5, h6, p{
 
     .recipe_description{
 
-        text-align: center;
+        text-align: left;
         margin: 0 20%;
     }
+}
+
+.recipe_ingredients{
+
+    text-align: left;
+    margin: 0 20%;
+    font-size: 17px;
 }
 
  .create_recipe a{
@@ -852,6 +812,8 @@ footer{
     background: rgba(0,0,0,0.9);
     background-size: cover;
    
+
+   
 }
 
 footer:before{
@@ -863,7 +825,9 @@ footer:before{
     width: 100%;
     height: 100%;
     background-image: url(../images/footer_wood1.jpg);
+    
     opacity: 0.9;
+   
 
 }
 
@@ -927,28 +891,6 @@ footer:before{
 
 
 
-/*.col-2-sub{
-
-    font-size: 15px;
-}*/
-
-
-/*.icons{
-
-   position: relative;
-   top: 20px;
- 
-}*/
-
-
-
-
-.fa_icon{
-
-    margin-right: 30px;
-  
-}
-
 .col-icons a{
 
     text-decoration: none;
@@ -989,23 +931,13 @@ footer:before{
     cursor: pointer;
     border: none;
     position: relative;
-    top: 1px;
+    top: 0px;
     margin-bottom: 30px;
 
 }
 
-#submit_input:hover{
 
-    background-color: #87ceeb;
 
-}
-
-/*.bottom{
-
-    position: relative;
-    top: 30px;
-
-}*/
 
 
 .bottom span{
@@ -1013,22 +945,12 @@ footer:before{
    margin-left: calc(50% - 5em);
    font-size: 12px;
    display: inline-block;
+   color: #fff;
 
 }
 
-.bottom a{
 
-    text-decoration: none;
-    color: #fff;
-    
 
-}
-
-.bottom a:hover{
-
-    color: #ccc;
-
-}
 
 @media screen and (max-width: 844px){
 
@@ -1161,6 +1083,8 @@ footer:before{
 
 
 
+
+
 /* All recipes page*/
 
 .container{
@@ -1277,13 +1201,19 @@ footer:before{
     width: 60%; 
     text-align: center;
     color: #696969;
-    font-style: italic;
+
 }
 
 .add_recipe_well{
 
     font-family: 'David Libre', serif; 
     color: #051a2f;
+}
+
+.recipe_ingredients_recipe_details{
+
+    position: relative;
+    left: -20%;
 }
 
 .post_button{

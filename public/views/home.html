@@ -17,7 +17,7 @@
 		 
 
 		  <p class="title">MAINCOURSE</p>
-		  <a href="#!/recipes/maincourse" class="all_recipes_title">All Maincourse</a>
+		  <div  class="all_recipes_title"><a href="#!/recipes/maincourse">All Maincourse</a></div>
 
         <!-- Blog posts -->
 
@@ -33,7 +33,9 @@
 
 				   <div id="post_date">Posted on <br/> {{ maincourseRecipe.create_date }} </div>
 
-				   <div class="recipe_description"> {{ maincourseRecipe.description }} </div>
+				   <div class="recipe_ingredients">INGREDIENTS</div>
+
+				   <div class="recipe_description"> {{ maincourseRecipe.description | limitTo : 85 }} </div>
 
 				  <div id="readmore"><a href="#!/recipes/details/{{ maincourseRecipe._id }}">Read More.. </a></div>
                    
@@ -85,7 +87,7 @@
 		  <div class="blur">
 
 		  <p class="title">SNACKS</p>
-		  <a href="#!/recipes/snacks" class="all_recipes_title">All Snacks</a>
+		  <div class="all_recipes_title"><a href="#!/recipes/snacks">All Snacks</a></div>
 
 	    <!-- Blog posts -->
 
@@ -101,7 +103,7 @@
 
 				   <div id="post_date">Posted on <br/>{{ snacksRecipe.create_date }} </div>
 
-				   <div class="recipe_description"> {{ snacksRecipe.description }} </div>
+				   <div class="recipe_description"> {{ snacksRecipe.description | limitTo : 85 }} </div>
 
 				  <div id="readmore"><a href="#!/recipes/details/{{ snacksRecipe._id }}">Read More.. </a></div>
                    
@@ -150,7 +152,7 @@
       <section class="sect four" id="starter">
 
 		  <p class="title">STARTERS</p>
-		  <a href="#!/recipes/starters" class="all_recipes_title">All Starters</a>
+		  <div class="all_recipes_title"><a href="#!/recipes/starters">All Starters</a></div>
 
 
 		<!-- Blog posts -->
@@ -166,7 +168,7 @@
 
 				   <div id="post_date">Posted on <br/> {{ startersRecipe.create_date }} </div>
 
-				   <div class="recipe_description"> {{ startersRecipe.description }} </div>
+				   <div class="recipe_description"> {{ startersRecipe.description | limitTo : 85 }} </div>
 
 				  <div id="readmore"><a href="#!/recipes/details/{{ startersRecipe._id }}">Read More.. </a></div>
                    
@@ -212,7 +214,7 @@
       <section class="sect five" id="desserts">
 		  
 		  <p class="title">DESSERTS</p>
-		  <a href="#!/recipes/desserts" class="all_recipes_title">All Desserts</a>
+		  <div class="all_recipes_title"><a href="#!/recipes/desserts">All Desserts</a></div>
 
 
 		<!-- Blog posts -->
@@ -229,7 +231,7 @@
 
 				   <div id="post_date">Posted on <br/> {{ dessertsRecipe.create_date }} </div>
 
-				   <div class="recipe_description"> {{ dessertsRecipe.description }} </div>
+				   <div class="recipe_description"> {{ dessertsRecipe.description | limitTo : 85 }} </div>
 
 				  <div id="readmore"><a href="#!/recipes/details/{{ dessertsRecipe._id }}">Read More.. </a></div>
                    
@@ -275,7 +277,7 @@
 	  <section class="sect six" id="beverages">
 		  
 		  <p class="title">BEVERAGES</p>
-		  <a href="#!/recipes/beverages" class="all_recipes_title">All Beverages</a>
+		  <div class="all_recipes_title"><a href="#!/recipes/beverages">All Beverages</a></div>
 
 
 		<!-- Blog posts -->
@@ -292,7 +294,7 @@
 
 				   <div id="post_date">Posted on <br/> {{ beveragesRecipe.create_date }} </div>
 
-				   <div class="recipe_description"> {{ beveragesRecipe.description }} </div>
+				   <div class="recipe_description"> {{ beveragesRecipe.description | limitTo : 85 }} </div>
 
 				  <div id="readmore"><a href="#!/recipes/details/{{ beveragesRecipe._id }}">Read More.. </a></div>
                    
@@ -338,7 +340,7 @@
 	  <section class="sect seven" id="popular">
 
 		  <p class="title">POPULAR</p>
-		  <a href="#!/recipes/popular" class="all_recipes_title">All Popular</a>
+		  <div class="all_recipes_title"><a href="#!/recipes/popular">All Popular</a></div>
 
 
 		<!-- Blog posts -->
@@ -355,7 +357,7 @@
 
 				   <div id="post_date">Posted on <br/> {{ popularRecipe.create_date }} </div>
 
-				   <div class="recipe_description"> {{ popularRecipe.description }} </div>
+				   <div class="recipe_description"> {{ popularRecipe.description | limitTo : 85 }} </div>
 
 				  <div id="readmore"><a href="#!/recipes/details/{{ popularRecipe._id }}">Read More.. </a></div>
                    

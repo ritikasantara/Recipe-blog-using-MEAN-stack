@@ -1,5 +1,5 @@
 
-<div  class="container col-md-12 container_popular">
+<div  class="container container_popular">
 
     <div ng-init="getPopularRecipes()">
 
@@ -9,9 +9,9 @@
 
             <img ng-src="{{ popularRecipe.image }}" width="190" height="100"/>
 
-            <div id="post_date">Posted on <br/> {{ popularRecipe.create_date }} </div>
+            <div id="post_date_recipe">Posted on <br/> {{ popularRecipe.create_date }} </div>
 
-            <div class="recipe_description"> {{ popularRecipe.description }} </div>
+            <div class="recipe_description"> {{ popularRecipe.description | limitTo : 85 }} </div>
 
             <div id="read_recipe"><a href="#!/recipes/details/{{ popularRecipe._id }}">Read More.. </a></div>
 
