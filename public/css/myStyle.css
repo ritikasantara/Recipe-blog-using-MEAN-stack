@@ -1,4 +1,6 @@
 
+/* Home page */
+
 *{
     margin: 0;
     padding: 0;
@@ -319,9 +321,6 @@ h1, h2, h3, h4, h5, h6, p{
        
     }
 }
-
-
-
 
 
 
@@ -752,7 +751,7 @@ footer:before{
 
 
 
-.padd{
+.columns_footer{
 
     max-width: 100%;
     margin: 0 auto;
@@ -834,7 +833,7 @@ footer:before{
 
 #submit_input{
 
-    background-color: royalblue;
+    background: #322c4f;
     color: #fff;
     font-size: 14px;
     padding: 5px 10px;
@@ -988,7 +987,7 @@ footer:before{
 
 
 
-/* All recipes page*/
+/* Other pages */
 
 .container{
 
