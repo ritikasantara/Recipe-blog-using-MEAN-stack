@@ -108,113 +108,101 @@ h1, h2, h3, h4, h5, h6, p{
 
 #sitename{
 
-    font-size: 70px;
+    font-size: 600%;
     border: 9px solid rgba(200,200,200,0.6);
     font-family: 'Titillium Web', sans-serif;
-    padding: 20px 30px;
-    position: absolute;
-    right: 15%;
-    top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    width: 40%;
+    margin: 0 55% 0 45%;;
+    position: relative;
+    top: calc(50% - 200px);
     color: rgba(200,200,200,0.8);
     border-radius: 6px;
- 
+
 
 }
+
+
 
 @media screen and (max-width: 980px){
 
     #sitename{
 
-        font-size: 70px;
-        border: 9px solid rgba(200,200,200,0.6);
-        font-family: 'Titillium Web', sans-serif;
-        padding: 20px 30px;
-        position: absolute;
-        right: 15%;
-        top: 40%;
-        color: rgba(200,200,200,0.8);
-        border-radius: 6px;
+        font-size: 500%;
+        width: 50%;
     
 
     }
 }
 
-
-
-@media screen and (max-width: 796px){
+@media screen and (max-width: 878px){
 
     #sitename{
 
-        font-size: 50px;   
-        text-align: center;
-        top: 35%;
-        color: rgba(200,200,200,0.8);
-        border-radius: 6px;
+        font-size: 500%;
+        width: 50%;
+        margin: 0 auto;
     
 
     }
 }
 
-@media screen and (max-width: 412px){
+@media screen and (max-width: 649px){
 
     #sitename{
 
-        font-size: 40px;
-        left: 13%;
-        text-align: center;
-        top: 30%;
-        color: rgba(200,200,200,0.8);
-        border-radius: 6px;
+        font-size: 450%;
+        width: 55%;
+        margin: 0 auto;
+        top: calc(50% - 100px);
     
 
     }
 }
 
-@media screen and (max-width: 414px){
+@media screen and (max-width: 550px){
 
     #sitename{
 
-        font-size: 40px;
-        left: 12%;
-        text-align: center;
-        top: 35%;
-        color: rgba(200,200,200,0.8);
-        border-radius: 6px;
+        font-size: 400%;
+        width: 60%;
+        margin: 0 auto;
+        top: calc(50% - 100px);
     
 
     }
 }
 
-
-@media screen and (max-width: 360px){
+@media screen and (max-width: 454px){
 
     #sitename{
 
-        font-size: 40px;
-        left: 14%;
-        text-align: center;
-        top: 30%;
-        color: rgba(200,200,200,0.8);
-        border-radius: 6px;
+        font-size: 350%;
+        width: 60%;
+        margin: 0 auto;
+        top: calc(50% - 100px);
     
 
     }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 388px){
 
     #sitename{
 
-        font-size: 40px;
-        left: 12%;
-        text-align: center;
-        top: 30%;
-        color: rgba(200,200,200,0.8);
-        border-radius: 6px;
+        font-size: 300%;
+        width: 65%;
+        margin: 0 auto;
+        top: calc(50% - 100px);
     
 
     }
 }
+
+
 
 
 /* sections */

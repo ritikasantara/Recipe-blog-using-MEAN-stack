@@ -1,4 +1,5 @@
 var mongoose = require('mongoose');
+var moment = require('moment');
 var Categorys = require('./categories');
 
 //Categories schema
@@ -37,7 +38,6 @@ var postsSchema = mongoose.Schema({
 
         type: Date,
         default: Date.now
-
     }
 
 

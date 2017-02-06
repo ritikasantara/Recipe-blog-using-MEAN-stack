@@ -25,7 +25,7 @@
 		  <div class="blogs" ng-init="getMaincourseRecipes()">
 
 			 
-			  <div class="recipes" ng-repeat="maincourseRecipe in maincourseRecipes | limitTo: 4">
+			  <div class="recipes" ng-repeat="maincourseRecipe in maincourseRecipes | limitTo: 4 | orderBy: 'create_date'">
                   
                    <p id="recipe_title">{{ maincourseRecipe.title }}</p>
 
@@ -95,7 +95,7 @@
 
             
 
-			  <div class="recipes" ng-repeat="snacksRecipe in snacksRecipes | limitTo: 4">
+			  <div class="recipes" ng-repeat="snacksRecipe in snacksRecipes | limitTo: 4 | orderBy: 'create_date'">
                   
                    <p id="recipe_title">{{ snacksRecipe.title }}</p>
 
@@ -162,7 +162,7 @@
 
             
 
-			  <div class="recipes" ng-repeat="startersRecipe in startersRecipes | limitTo: 4">
+			  <div class="recipes" ng-repeat="startersRecipe in startersRecipes | limitTo: 4 | orderBy: 'create_date'">
                   
                    <p id="recipe_title">{{ startersRecipe.title }}</p>
 
@@ -227,7 +227,7 @@
 
             
 
-			  <div class="recipes" ng-repeat="dessertsRecipe in dessertsRecipes | limitTo: 4">
+			  <div class="recipes" ng-repeat="dessertsRecipe in dessertsRecipes | limitTo: 4 | orderBy: 'create_date'">
                   
                    <p id="recipe_title">{{ dessertsRecipe.title }}</p>
 
@@ -292,7 +292,7 @@
 
             
 
-			  <div class="recipes" ng-repeat="beveragesRecipe in beveragesRecipes | limitTo: 4">
+			  <div class="recipes" ng-repeat="beveragesRecipe in beveragesRecipes | limitTo: 4 | orderBy: 'create_date'">
                   
                    <p id="recipe_title">{{ beveragesRecipe.title }}</p>
 
@@ -357,7 +357,7 @@
 
             
 
-			  <div class="recipes" ng-repeat="popularRecipe in popularRecipes | limitTo: 4">
+			  <div class="recipes" ng-repeat="popularRecipe in popularRecipes | limitTo: 4 | orderBy: 'create_date'">
                   
                    <p id="recipe_title">{{ popularRecipe.title }}</p>
 
