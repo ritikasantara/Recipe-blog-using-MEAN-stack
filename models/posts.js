@@ -1,5 +1,4 @@
 var mongoose = require('mongoose');
-var moment = require('moment');
 var Categorys = require('./categories');
 
 //Categories schema
